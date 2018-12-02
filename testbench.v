@@ -71,8 +71,37 @@ module testbench ();
             $dumpfile("urnaEletronica.vcd");
             $dumpvars(0, testbench);
 
+            $display("\n########################################################################################################");
+		          $display("#                                Bem-vindo a Urna Eletronica em Verilog!                               #");
+		          $display("########################################################################################################\n");
+
             reset = 0; confirma = 0; valid = 0; digitar = 0; resetUrna = 0; finish = 0; #20;
             resetUrna = 1; reset = 1; #20; valid = 1; #20; valid = 0; #20; resetUrna = 0; reset = 0; #20;
+
+            $monitor("Alteracao nos votos detectada:\nArthur:  %d%d%d%d%d%d\nLeandro: %d%d%d%d%d%d\nMateus:  %d%d%d%d%d%d\nPablo:   %d%d%d%d%d%d\nNulo:    %d%d%d%d%d%d\n",
+           bcd0_5, bcd0_4, bcd0_3, bcd0_2, bcd0_1, bcd0_0,
+     			 bcd1_5, bcd1_4, bcd1_3, bcd1_2, bcd1_1, bcd1_0,
+     			 bcd2_5, bcd2_4, bcd2_3, bcd2_2, bcd2_1, bcd2_0,
+     			 bcd3_5, bcd3_4, bcd3_3, bcd3_2, bcd3_1, bcd3_0,
+     			 bcd4_5, bcd4_4, bcd4_3, bcd4_2, bcd4_1, bcd4_0);
+
+            digitar = 3; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 5; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 0; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 3; #20; valid = 1; #20; valid = 0; #20;
+            confirma = 1; #20; valid = 1; #20; valid = 0; #20;
+
+            digitar = 3; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 5; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 1; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 3; #20; valid = 1; #20; valid = 0; #20;
+            confirma = 1; #20; valid = 1; #20; valid = 0; #20;
+
+            digitar = 3; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 4; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 8; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 9; #20; valid = 1; #20; valid = 0; #20;
+            confirma = 1; #20; valid = 1; #20; valid = 0; #20;
 
             digitar = 3; #20; valid = 1; #20; valid = 0; #20;
             digitar = 4; #20; valid = 1; #20; valid = 0; #20;

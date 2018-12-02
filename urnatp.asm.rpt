@@ -1,5 +1,5 @@
 Assembler report for urnatp
-Sun Dec 02 17:54:01 2018
+Sun Dec 02 18:05:07 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Dec 02 17:54:01 2018 ;
+; Assembler Status      ; Successful - Sun Dec 02 18:05:07 2018 ;
 ; Revision Name         ; urnatp                                ;
 ; Top-level Entity Name ; urnatp                                ;
 ; Family                ; Cyclone IV E                          ;
@@ -66,8 +66,8 @@ refer to the applicable agreement for further details.
 +----------------+--------------------------------------------------------------+
 ; Option         ; Setting                                                      ;
 +----------------+--------------------------------------------------------------+
-; JTAG usercode  ; 0x0058909B                                                   ;
-; Checksum       ; 0x0058909B                                                   ;
+; JTAG usercode  ; 0x0058CC16                                                   ;
+; Checksum       ; 0x0058CC16                                                   ;
 +----------------+--------------------------------------------------------------+
 
 
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Dec 02 17:53:58 2018
+    Info: Processing started: Sun Dec 02 18:05:04 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off urnatp -c urnatp
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 555 megabytes
-    Info: Processing ended: Sun Dec 02 17:54:01 2018
+    Info: Processing ended: Sun Dec 02 18:05:07 2018
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

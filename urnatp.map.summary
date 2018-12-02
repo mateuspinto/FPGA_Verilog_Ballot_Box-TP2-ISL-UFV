@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Dec 02 17:53:45 2018
+Analysis & Synthesis Status : Successful - Sun Dec 02 18:04:49 2018
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : urnatp
 Top-level Entity Name : urnatp
 Family : Cyclone IV E
-Total logic elements : 242
-    Total combinational functions : 236
+Total logic elements : 243
+    Total combinational functions : 241
     Dedicated logic registers : 163
 Total registers : 163
 Total pins : 104

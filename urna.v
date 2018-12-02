@@ -1,11 +1,11 @@
 module urna(valid, estado, next_estado, clock, finish, confirma, reset, digit, digito1, digito2, digito3, digito4, candidatoArthur, candidatoLeandro, candidatoMateus, candidatoPablo, candidatoNulo, votoValido);
 
-    input clock, valid, finish, confirma, reset;
-    input[3:0] digit;
+   input clock, valid, finish, confirma, reset;
+   input[3:0] digit;
 
 
-    output[3:0] digito1, digito2, digito3, digito4;
-    output candidatoArthur, candidatoLeandro, candidatoMateus, candidatoPablo, candidatoNulo;
+   output[3:0] digito1, digito2, digito3, digito4;
+   output candidatoArthur, candidatoLeandro, candidatoMateus, candidatoPablo, candidatoNulo;
 	 output[2:0] estado, next_estado;
 
 
@@ -80,7 +80,16 @@ module urna(valid, estado, next_estado, clock, finish, confirma, reset, digit, d
 
 					 resetando: begin
 						  next_estado<=aguardando1Dig;
-						  next_digito1 <= 0;
+              next_candidatoArthur <= 0;
+              next_candidatoLeandro <= 0;
+              next_candidatoMateus <= 0;
+              next_candidatoPablo <= 0;
+              next_candidatoNulo <= 0;
+
+              next_digito1 <= 0;
+              next_digito2 <= 0;
+              next_digito3 <= 0;
+              next_digito4 <= 0;
 					 end
 
                 aguardando1Dig: begin
@@ -95,6 +104,7 @@ module urna(valid, estado, next_estado, clock, finish, confirma, reset, digit, d
                     next_digito3 <= 0;
                     next_digito4 <= 0;
                     next_digito1 <= digit;
+
 						  next_estado <= aguardando2Dig;
                 end
 

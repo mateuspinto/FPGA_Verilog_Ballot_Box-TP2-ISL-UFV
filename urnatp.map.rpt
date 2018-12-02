@@ -1,5 +1,5 @@
 Analysis & Synthesis report for urnatp
-Sun Dec 02 17:53:45 2018
+Sun Dec 02 18:04:49 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -53,13 +53,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 02 17:53:45 2018       ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 02 18:04:49 2018       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; urnatp                                      ;
 ; Top-level Entity Name              ; urnatp                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 242                                         ;
-;     Total combinational functions  ; 236                                         ;
+; Total logic elements               ; 243                                         ;
+;     Total combinational functions  ; 241                                         ;
 ;     Dedicated logic registers      ; 163                                         ;
 ; Total registers                    ; 163                                         ;
 ; Total pins                         ; 104                                         ;
@@ -193,16 +193,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------------------------+
 ; Resource                                    ; Usage                            ;
 +---------------------------------------------+----------------------------------+
-; Estimated Total logic elements              ; 242                              ;
+; Estimated Total logic elements              ; 243                              ;
 ;                                             ;                                  ;
-; Total combinational functions               ; 236                              ;
+; Total combinational functions               ; 241                              ;
 ; Logic element usage by number of LUT inputs ;                                  ;
-;     -- 4 input functions                    ; 85                               ;
-;     -- 3 input functions                    ; 66                               ;
-;     -- <=2 input functions                  ; 85                               ;
+;     -- 4 input functions                    ; 87                               ;
+;     -- 3 input functions                    ; 80                               ;
+;     -- <=2 input functions                  ; 74                               ;
 ;                                             ;                                  ;
 ; Logic elements by mode                      ;                                  ;
-;     -- normal mode                          ; 205                              ;
+;     -- normal mode                          ; 210                              ;
 ;     -- arithmetic mode                      ; 31                               ;
 ;                                             ;                                  ;
 ; Total registers                             ; 163                              ;
@@ -215,8 +215,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                  ;
 ; Maximum fan-out node                        ; divisorClock:divclock1|out_clock ;
 ; Maximum fan-out                             ; 87                               ;
-; Total fan-out                               ; 1325                             ;
-; Average fan-out                             ; 2.18                             ;
+; Total fan-out                               ; 1353                             ;
+; Average fan-out                             ; 2.21                             ;
 +---------------------------------------------+----------------------------------+
 
 
@@ -225,7 +225,7 @@ refer to the applicable agreement for further details.
 +-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name   ; Library Name ;
 +-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+---------------+--------------+
-; |urnatp                       ; 236 (0)             ; 163 (0)                   ; 0           ; 0            ; 0       ; 0         ; 104  ; 0            ; |urnatp                          ; urnatp        ; work         ;
+; |urnatp                       ; 241 (0)             ; 163 (0)                   ; 0           ; 0            ; 0       ; 0         ; 104  ; 0            ; |urnatp                          ; urnatp        ; work         ;
 ;    |bcd7convert:bcd7convert0| ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|bcd7convert:bcd7convert0 ; bcd7convert   ; work         ;
 ;    |bcd7convert:bcd7convert1| ; 11 (11)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|bcd7convert:bcd7convert1 ; bcd7convert   ; work         ;
 ;    |bcd7convert:bcd7convert2| ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|bcd7convert:bcd7convert2 ; bcd7convert   ; work         ;
@@ -238,9 +238,9 @@ refer to the applicable agreement for further details.
 ;    |contadorBCD:bcdModule2_0| ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|contadorBCD:bcdModule2_0 ; contadorBCD   ; work         ;
 ;    |contadorBCD:bcdModule3_0| ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|contadorBCD:bcdModule3_0 ; contadorBCD   ; work         ;
 ;    |contadorBCD:bcdModule4_0| ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|contadorBCD:bcdModule4_0 ; contadorBCD   ; work         ;
-;    |displayModule:display0|   ; 42 (42)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|displayModule:display0   ; displayModule ; work         ;
+;    |displayModule:display0|   ; 41 (41)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|displayModule:display0   ; displayModule ; work         ;
 ;    |divisorClock:divclock1|   ; 57 (57)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|divisorClock:divclock1   ; divisorClock  ; work         ;
-;    |urna:urna0|               ; 58 (58)             ; 48 (48)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|urna:urna0               ; urna          ; work         ;
+;    |urna:urna0|               ; 64 (64)             ; 48 (48)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|urna:urna0               ; urna          ; work         ;
 +-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -404,22 +404,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo4[2]           ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo4[3]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo4[0]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo4[1]           ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo5[2]           ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo5[3]           ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo6[0]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo6[2]           ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo6[3]           ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |urnatp|urna:urna0|next_digito3[3]                ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |urnatp|urna:urna0|next_digito4[1]                ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |urnatp|urna:urna0|next_digito2[3]                ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |urnatp|urna:urna0|next_digito4[3]                ;
 ; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |urnatp|urna:urna0|next_digito1[3]                ;
 ; 9:1                ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |urnatp|urna:urna0|next_estado[0]                 ;
 ; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert7|SeteSegmentos[6] ;
-; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert6|SeteSegmentos[1] ;
-; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert5|SeteSegmentos[3] ;
-; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert4|SeteSegmentos[4] ;
-; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert1|SeteSegmentos[6] ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert6|SeteSegmentos[0] ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert5|SeteSegmentos[2] ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert4|SeteSegmentos[6] ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert1|SeteSegmentos[5] ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |urnatp|urna:urna0|next_digito2[3]                ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |urnatp|urna:urna0|next_digito3[3]                ;
 ; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo7[0]           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 
@@ -532,18 +532,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR              ; 2                           ;
 ;     SLD               ; 5                           ;
 ;     plain             ; 54                          ;
-; cycloneiii_lcell_comb ; 238                         ;
+; cycloneiii_lcell_comb ; 243                         ;
 ;     arith             ; 31                          ;
 ;         2 data inputs ; 31                          ;
-;     normal            ; 207                         ;
+;     normal            ; 212                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 44                          ;
-;         3 data inputs ; 66                          ;
-;         4 data inputs ; 85                          ;
+;         2 data inputs ; 33                          ;
+;         3 data inputs ; 80                          ;
+;         4 data inputs ; 87                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 2.08                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.13                        ;
 +-----------------------+-----------------------------+
 
 
@@ -552,7 +552,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -562,7 +562,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Dec 02 17:53:34 2018
+    Info: Processing started: Sun Dec 02 18:04:38 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off urnatp -c urnatp
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -631,13 +631,13 @@ Warning (21074): Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 18
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 18
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 18
-Info (21057): Implemented 350 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 347 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 83 output pins
-    Info (21061): Implemented 246 logic cells
+    Info (21061): Implemented 243 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
-    Info: Peak virtual memory: 637 megabytes
-    Info: Processing ended: Sun Dec 02 17:53:45 2018
+    Info: Peak virtual memory: 627 megabytes
+    Info: Processing ended: Sun Dec 02 18:04:49 2018
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:24
 
