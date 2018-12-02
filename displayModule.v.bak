@@ -1,0 +1,163 @@
+module displayModule (estado, finish, escolhaCandidato, d1, d2, d3, d4, bcd0_0, bcd0_1, bcd0_2, bcd0_3, bcd1_0, bcd1_1, bcd1_2, bcd1_3, bcd2_0, bcd2_1, bcd2_2, bcd2_3, bcd3_0, bcd3_1, bcd3_2, bcd3_3, bcd4_0, bcd4_1, bcd4_2, bcd4_3, bcdo0, bcdo1, bcdo2, bcdo3, display2, bcdoc, clock);
+
+output[6:0] display2;
+reg[6:0] display2;
+
+output[3:0]  bcdo0, bcdo1, bcdo2, bcdo3, bcdoc;
+reg[3:0]  bcdo0, bcdo1, bcdo2, bcdo3, bcdoc;
+
+input[3:0] bcd0_0, bcd0_1, bcd0_2, bcd0_3, bcd1_0, bcd1_1, bcd1_2, bcd1_3, bcd2_0, bcd2_1, bcd2_2, bcd2_3, bcd3_0, bcd3_1, bcd3_2, bcd3_3, bcd4_0, bcd4_1, bcd4_2, bcd4_3, d1, d2, d3, d4;
+input[2:0] estado, escolhaCandidato;
+input finish;
+input clock;
+
+
+always @(posedge clock) begin
+    if(finish) begin
+    
+    display2 = 7'b1011000;
+    
+        case(escolhaCandidato)
+        
+            3'b000:begin
+            
+                bcdoc = 0;
+                
+                bcdo0 = bcd0_0;
+                bcdo1 = bcd0_1;
+                bcdo2 = bcd0_2;
+                bcdo3 = bcd0_3;
+            
+            end
+            
+            3'b001:begin
+            
+                bcdoc = 1;
+                
+                bcdo0 = bcd1_0;
+                bcdo1 = bcd1_1;
+                bcdo2 = bcd1_2;
+                bcdo3 = bcd1_3;
+            
+            end
+            
+            3'b010:begin
+            
+                bcdoc = 2;
+                
+                bcdo0 = bcd2_0;
+                bcdo1 = bcd2_1;
+                bcdo2 = bcd2_2;
+                bcdo3 = bcd2_3;
+            
+            end
+            
+            3'b011:begin
+            
+                bcdoc = 3;
+                
+                bcdo0 = bcd3_0;
+                bcdo1 = bcd3_1;
+                bcdo2 = bcd3_2;
+                bcdo3 = bcd3_3;
+            
+            end
+            
+            3'b011:begin
+            
+                bcdoc = 11;
+                
+                bcdo0 = bcd4_0;
+                bcdo1 = bcd4_1;
+                bcdo2 = bcd4_2;
+                bcdo3 = bcd4_3;
+            
+            end
+            
+            default:begin
+            
+                bcdoc = 10;
+                
+                bcdo0 = 10;
+                bcdo1 = 10;
+                bcdo2 = 10;
+                bcdo3 = 10;
+            
+            end
+        
+        endcase
+        
+
+    end else begin
+    
+        display2 = 127;
+        bcdoc = 10;
+        
+        case(estado)
+            
+            //1º estado
+                    3'b000:begin
+                        
+                        bcdo0 = d1;
+                        bcdo1 = 10;
+                        bcdo2 = 10;
+                        bcdo3 = 10;
+                        
+                    end
+
+            //2º estado
+                    3'b001:begin
+                        
+                        bcdo0 = d1;
+                        bcdo1 = d2;
+                        bcdo2 = 10;
+                        bcdo3 = 10;
+                        
+                    end
+            
+            //3º estado
+                    3'b010:begin
+                        
+                        bcdo0 = d1;
+                        bcdo1 = d2;
+                        bcdo2 = d3;
+                        bcdo3 = 10;
+                        
+                    end
+                    
+            //4º estado
+                    3'b011:begin
+                        
+                        bcdo0 = d1;
+                        bcdo1 = d2;
+                        bcdo2 = d3;
+                        bcdo3 = d4;
+                        
+                    end
+
+                    default:begin
+                    
+                        bcdo0 = 10;
+                        bcdo1 = 10;
+                        bcdo2 = 10;
+                        bcdo3 = 10;
+                    
+                    end
+
+            endcase
+    
+    end
+
+end
+
+
+
+
+
+
+
+
+
+
+
+endmodule

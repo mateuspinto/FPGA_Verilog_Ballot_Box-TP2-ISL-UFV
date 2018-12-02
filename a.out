@@ -1,0 +1,379 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_000000000034e560 .scope module, "clock1unit" "clock1unit" 2 1;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "clk"
+v0000000002283480_0 .var "clk", 0 0;
+S_0000000002283180 .scope module, "contadorBCD" "contadorBCD" 3 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clock"
+    .port_info 1 /OUTPUT 4 "valor"
+    .port_info 2 /OUTPUT 1 "overflow"
+    .port_info 3 /INPUT 1 "reset"
+o00000000022d70f8 .functor BUFZ 1, C4<z>; HiZ drive
+v00000000022c7d80_0 .net "clock", 0 0, o00000000022d70f8;  0 drivers
+v00000000022c7e20_0 .var "overflow", 0 0;
+o00000000022d7158 .functor BUFZ 1, C4<z>; HiZ drive
+v000000000232ea80_0 .net "reset", 0 0, o00000000022d7158;  0 drivers
+v000000000232ee40_0 .var "valor", 3 0;
+E_00000000022d6690 .event posedge, v00000000022c7d80_0;
+S_0000000002283300 .scope module, "testbench" "testbench" 4 5;
+ .timescale 0 0;
+S_00000000022c7ad0 .scope module, "urna" "urna" 5 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "valid"
+    .port_info 1 /OUTPUT 3 "estado"
+    .port_info 2 /OUTPUT 3 "next_estado"
+    .port_info 3 /INPUT 1 "clock"
+    .port_info 4 /INPUT 1 "finish"
+    .port_info 5 /INPUT 1 "confirma"
+    .port_info 6 /INPUT 1 "reset"
+    .port_info 7 /INPUT 4 "digit"
+    .port_info 8 /OUTPUT 4 "digito1"
+    .port_info 9 /OUTPUT 4 "digito2"
+    .port_info 10 /OUTPUT 4 "digito3"
+    .port_info 11 /OUTPUT 4 "digito4"
+    .port_info 12 /OUTPUT 1 "candidatoArthur"
+    .port_info 13 /OUTPUT 1 "candidatoLeandro"
+    .port_info 14 /OUTPUT 1 "candidatoMateus"
+    .port_info 15 /OUTPUT 1 "candidatoPablo"
+    .port_info 16 /OUTPUT 1 "candidatoNulo"
+    .port_info 17 /OUTPUT 2 "votoValido"
+P_00000000022c37e0 .param/l "aguardando1Dig" 0 5 29, C4<000>;
+P_00000000022c3818 .param/l "aguardando2Dig" 0 5 30, C4<001>;
+P_00000000022c3850 .param/l "aguardando3Dig" 0 5 31, C4<010>;
+P_00000000022c3888 .param/l "aguardando4Dig" 0 5 32, C4<011>;
+P_00000000022c38c0 .param/l "aguardandoConfirma" 0 5 33, C4<100>;
+P_00000000022c38f8 .param/l "matriculaArthur" 0 5 24, C4<0011010100000011>;
+P_00000000022c3930 .param/l "matriculaLeandro" 0 5 25, C4<0011010100010011>;
+P_00000000022c3968 .param/l "matriculaMateus" 0 5 26, C4<0011010010001001>;
+P_00000000022c39a0 .param/l "matriculaPablo" 0 5 27, C4<0011010010000000>;
+P_00000000022c39d8 .param/l "resetando" 0 5 34, C4<111>;
+v000000000232f2a0_0 .var "candidatoArthur", 0 0;
+v000000000232f520_0 .var "candidatoLeandro", 0 0;
+v000000000232eb20_0 .var "candidatoMateus", 0 0;
+v000000000232f200_0 .var "candidatoNulo", 0 0;
+v000000000232f340_0 .var "candidatoPablo", 0 0;
+o00000000022d7368 .functor BUFZ 1, C4<z>; HiZ drive
+v000000000232f160_0 .net "clock", 0 0, o00000000022d7368;  0 drivers
+o00000000022d7398 .functor BUFZ 1, C4<z>; HiZ drive
+v000000000232ec60_0 .net "confirma", 0 0, o00000000022d7398;  0 drivers
+o00000000022d73c8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v000000000232f3e0_0 .net "digit", 3 0, o00000000022d73c8;  0 drivers
+v000000000232f7a0_0 .var "digito1", 3 0;
+v000000000232eee0_0 .var "digito2", 3 0;
+v000000000232ed00_0 .var "digito3", 3 0;
+v000000000232e9e0_0 .var "digito4", 3 0;
+v000000000232ebc0_0 .var "estado", 2 0;
+o00000000022d74e8 .functor BUFZ 1, C4<z>; HiZ drive
+v000000000232eda0_0 .net "finish", 0 0, o00000000022d74e8;  0 drivers
+v000000000232ef80_0 .var "next_candidatoArthur", 0 0;
+v000000000232f840_0 .var "next_candidatoLeandro", 0 0;
+v000000000232f020_0 .var "next_candidatoMateus", 0 0;
+v000000000232f0c0_0 .var "next_candidatoNulo", 0 0;
+v000000000232f700_0 .var "next_candidatoPablo", 0 0;
+v000000000232f480_0 .var "next_digito1", 3 0;
+v000000000232f5c0_0 .var "next_digito2", 3 0;
+v000000000232f660_0 .var "next_digito3", 3 0;
+v000000000232f8e0_0 .var "next_digito4", 3 0;
+v000000000232ff90_0 .var "next_estado", 2 0;
+v000000000232fef0_0 .var "next_votoValido", 1 0;
+o00000000022d7728 .functor BUFZ 1, C4<z>; HiZ drive
+v0000000002330850_0 .net "reset", 0 0, o00000000022d7728;  0 drivers
+o00000000022d7758 .functor BUFZ 1, C4<z>; HiZ drive
+v0000000002330f30_0 .net "valid", 0 0, o00000000022d7758;  0 drivers
+v0000000002331610_0 .var "votoValido", 1 0;
+E_00000000022d6c10 .event posedge, v0000000002330f30_0;
+E_00000000022d6190 .event posedge, v000000000232f160_0;
+    .scope S_000000000034e560;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002283480_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_000000000034e560;
+T_1 ;
+    %delay 1, 0;
+    %load/vec4 v0000000002283480_0;
+    %inv;
+    %store/vec4 v0000000002283480_0, 0, 1;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0000000002283180;
+T_2 ;
+    %wait E_00000000022d6690;
+    %load/vec4 v000000000232ea80_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_2.0, 8;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v000000000232ee40_0, 0, 4;
+T_2.0 ;
+    %load/vec4 v000000000232ea80_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_2.2, 8;
+    %load/vec4 v000000000232ee40_0;
+    %addi 1, 0, 4;
+    %store/vec4 v000000000232ee40_0, 0, 4;
+    %load/vec4 v000000000232ee40_0;
+    %pad/u 32;
+    %cmpi/e 10, 0, 32;
+    %jmp/0xz  T_2.4, 4;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v000000000232ee40_0, 0, 4;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000022c7e20_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000022c7e20_0, 0, 1;
+T_2.4 ;
+T_2.2 ;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0000000002283300;
+T_3 ;
+    %vpi_call 4 8 "$dumpfile", "urnaEletronica.vcd" {0 0 0};
+    %vpi_call 4 9 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000000002283300 {0 0 0};
+    %end;
+    .thread T_3;
+    .scope S_00000000022c7ad0;
+T_4 ;
+    %wait E_00000000022d6190;
+    %load/vec4 v000000000232eda0_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_4.0, 8;
+    %load/vec4 v0000000002330850_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_4.2, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000232f2a0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000232f520_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000232eb20_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000232f340_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000232f200_0, 0;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000000000232f7a0_0, 0;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000000000232eee0_0, 0;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000000000232ed00_0, 0;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000000000232e9e0_0, 0;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v0000000002331610_0, 0;
+    %pushi/vec4 7, 0, 3;
+    %assign/vec4 v000000000232ebc0_0, 0;
+T_4.2 ;
+    %load/vec4 v0000000002330850_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_4.4, 8;
+    %load/vec4 v000000000232ef80_0;
+    %assign/vec4 v000000000232f2a0_0, 0;
+    %load/vec4 v000000000232f700_0;
+    %assign/vec4 v000000000232f520_0, 0;
+    %load/vec4 v000000000232f020_0;
+    %assign/vec4 v000000000232eb20_0, 0;
+    %load/vec4 v000000000232f700_0;
+    %assign/vec4 v000000000232f340_0, 0;
+    %load/vec4 v000000000232f0c0_0;
+    %assign/vec4 v000000000232f200_0, 0;
+    %load/vec4 v000000000232f480_0;
+    %assign/vec4 v000000000232f7a0_0, 0;
+    %load/vec4 v000000000232f5c0_0;
+    %assign/vec4 v000000000232eee0_0, 0;
+    %load/vec4 v000000000232f660_0;
+    %assign/vec4 v000000000232ed00_0, 0;
+    %load/vec4 v000000000232f8e0_0;
+    %assign/vec4 v000000000232e9e0_0, 0;
+    %load/vec4 v000000000232fef0_0;
+    %assign/vec4 v0000000002331610_0, 0;
+    %load/vec4 v000000000232ff90_0;
+    %assign/vec4 v000000000232ebc0_0, 0;
+T_4.4 ;
+T_4.0 ;
+    %jmp T_4;
+    .thread T_4;
+    .scope S_00000000022c7ad0;
+T_5 ;
+    %wait E_00000000022d6c10;
+    %load/vec4 v000000000232ebc0_0;
+    %dup/vec4;
+    %pushi/vec4 7, 0, 3;
+    %cmp/u;
+    %jmp/1 T_5.0, 6;
+    %dup/vec4;
+    %pushi/vec4 0, 0, 3;
+    %cmp/u;
+    %jmp/1 T_5.1, 6;
+    %dup/vec4;
+    %pushi/vec4 1, 0, 3;
+    %cmp/u;
+    %jmp/1 T_5.2, 6;
+    %dup/vec4;
+    %pushi/vec4 2, 0, 3;
+    %cmp/u;
+    %jmp/1 T_5.3, 6;
+    %dup/vec4;
+    %pushi/vec4 3, 0, 3;
+    %cmp/u;
+    %jmp/1 T_5.4, 6;
+    %dup/vec4;
+    %pushi/vec4 4, 0, 3;
+    %cmp/u;
+    %jmp/1 T_5.5, 6;
+    %jmp T_5.6;
+T_5.0 ;
+    %pushi/vec4 0, 0, 3;
+    %assign/vec4 v000000000232ff90_0, 0;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000000000232f480_0, 0;
+    %jmp T_5.6;
+T_5.1 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000232ef80_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000232f840_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000232f020_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000232f700_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000000000232f0c0_0, 0;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000000000232f5c0_0, 0;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000000000232f660_0, 0;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v000000000232f8e0_0, 0;
+    %load/vec4 v000000000232f3e0_0;
+    %assign/vec4 v000000000232f480_0, 0;
+    %pushi/vec4 1, 0, 3;
+    %assign/vec4 v000000000232ff90_0, 0;
+    %jmp T_5.6;
+T_5.2 ;
+    %load/vec4 v000000000232f3e0_0;
+    %assign/vec4 v000000000232f5c0_0, 0;
+    %pushi/vec4 2, 0, 3;
+    %assign/vec4 v000000000232ff90_0, 0;
+    %jmp T_5.6;
+T_5.3 ;
+    %load/vec4 v000000000232f3e0_0;
+    %assign/vec4 v000000000232f660_0, 0;
+    %pushi/vec4 3, 0, 3;
+    %assign/vec4 v000000000232ff90_0, 0;
+    %jmp T_5.6;
+T_5.4 ;
+    %load/vec4 v000000000232f3e0_0;
+    %assign/vec4 v000000000232f8e0_0, 0;
+    %pushi/vec4 4, 0, 3;
+    %assign/vec4 v000000000232ff90_0, 0;
+    %jmp T_5.6;
+T_5.5 ;
+    %load/vec4 v000000000232f7a0_0;
+    %load/vec4 v000000000232eee0_0;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v000000000232ed00_0;
+    %concat/vec4; draw_concat_vec4
+    %load/vec4 v000000000232e9e0_0;
+    %concat/vec4; draw_concat_vec4
+    %dup/vec4;
+    %pushi/vec4 13571, 0, 16;
+    %cmp/u;
+    %jmp/1 T_5.7, 6;
+    %dup/vec4;
+    %pushi/vec4 13587, 0, 16;
+    %cmp/u;
+    %jmp/1 T_5.8, 6;
+    %dup/vec4;
+    %pushi/vec4 13449, 0, 16;
+    %cmp/u;
+    %jmp/1 T_5.9, 6;
+    %dup/vec4;
+    %pushi/vec4 13440, 0, 16;
+    %cmp/u;
+    %jmp/1 T_5.10, 6;
+    %load/vec4 v000000000232ec60_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_5.13, 8;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v000000000232f0c0_0, 0;
+    %pushi/vec4 3, 0, 2;
+    %assign/vec4 v000000000232fef0_0, 0;
+    %pushi/vec4 0, 0, 3;
+    %assign/vec4 v000000000232ff90_0, 0;
+T_5.13 ;
+    %jmp T_5.12;
+T_5.7 ;
+    %load/vec4 v000000000232ec60_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_5.15, 8;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v000000000232ef80_0, 0;
+    %pushi/vec4 1, 0, 2;
+    %assign/vec4 v000000000232fef0_0, 0;
+    %pushi/vec4 0, 0, 3;
+    %assign/vec4 v000000000232ff90_0, 0;
+T_5.15 ;
+    %jmp T_5.12;
+T_5.8 ;
+    %load/vec4 v000000000232ec60_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_5.17, 8;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v000000000232f840_0, 0;
+    %pushi/vec4 1, 0, 2;
+    %assign/vec4 v000000000232fef0_0, 0;
+    %pushi/vec4 0, 0, 3;
+    %assign/vec4 v000000000232ff90_0, 0;
+T_5.17 ;
+    %jmp T_5.12;
+T_5.9 ;
+    %load/vec4 v000000000232ec60_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_5.19, 8;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v000000000232f020_0, 0;
+    %pushi/vec4 1, 0, 2;
+    %assign/vec4 v000000000232fef0_0, 0;
+    %pushi/vec4 0, 0, 3;
+    %assign/vec4 v000000000232ff90_0, 0;
+T_5.19 ;
+    %jmp T_5.12;
+T_5.10 ;
+    %load/vec4 v000000000232ec60_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_5.21, 8;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v000000000232f700_0, 0;
+    %pushi/vec4 1, 0, 2;
+    %assign/vec4 v000000000232fef0_0, 0;
+    %pushi/vec4 0, 0, 3;
+    %assign/vec4 v000000000232ff90_0, 0;
+T_5.21 ;
+    %jmp T_5.12;
+T_5.12 ;
+    %pop/vec4 1;
+    %jmp T_5.6;
+T_5.6 ;
+    %pop/vec4 1;
+    %jmp T_5;
+    .thread T_5;
+# The file index is used to find the file name in the following table.
+:file_names 6;
+    "N/A";
+    "<interactive>";
+    "./clock1unit.v";
+    "./contadorbcd.v";
+    "testbench.v";
+    "./urna.v";

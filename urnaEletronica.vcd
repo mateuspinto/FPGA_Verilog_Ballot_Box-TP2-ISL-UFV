@@ -1,0 +1,15 @@
+$date
+	Sat Dec 01 23:38:11 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+$end

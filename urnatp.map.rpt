@@ -1,0 +1,649 @@
+Analysis & Synthesis report for urnatp
+Sat Dec 01 23:31:21 2018
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: urna:urna0
+ 13. Parameter Settings for User Entity Instance: displayModule:display0
+ 14. Port Connectivity Checks: "votoValido:votoValido0"
+ 15. Port Connectivity Checks: "contadorBCD:bcdModule4_5"
+ 16. Port Connectivity Checks: "contadorBCD:bcdModule3_5"
+ 17. Port Connectivity Checks: "contadorBCD:bcdModule2_5"
+ 18. Port Connectivity Checks: "contadorBCD:bcdModule1_5"
+ 19. Port Connectivity Checks: "contadorBCD:bcdModule0_5"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Dec 01 23:31:21 2018       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; urnatp                                      ;
+; Top-level Entity Name              ; urnatp                                      ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 251                                         ;
+;     Total combinational functions  ; 244                                         ;
+;     Dedicated logic registers      ; 162                                         ;
+; Total registers                    ; 162                                         ;
+; Total pins                         ; 104                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; urnatp             ; urnatp             ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
+; urna.v                           ; yes             ; User Verilog HDL File        ; C:/Users/mateusps10/Desktop/urnahenrique/urna.v          ;         ;
+; displayModule.v                  ; yes             ; User Verilog HDL File        ; C:/Users/mateusps10/Desktop/urnahenrique/displayModule.v ;         ;
+; contadorbcd.v                    ; yes             ; User Verilog HDL File        ; C:/Users/mateusps10/Desktop/urnahenrique/contadorbcd.v   ;         ;
+; bcd7convert.v                    ; yes             ; User Verilog HDL File        ; C:/Users/mateusps10/Desktop/urnahenrique/bcd7convert.v   ;         ;
+; divisorClock.v                   ; yes             ; User Verilog HDL File        ; C:/Users/mateusps10/Desktop/urnahenrique/divisorClock.v  ;         ;
+; urnatp.v                         ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v        ;         ;
+; votovalido.v                     ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/mateusps10/Desktop/urnahenrique/votovalido.v    ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                    ;
++---------------------------------------------+----------------------------------+
+; Resource                                    ; Usage                            ;
++---------------------------------------------+----------------------------------+
+; Estimated Total logic elements              ; 251                              ;
+;                                             ;                                  ;
+; Total combinational functions               ; 244                              ;
+; Logic element usage by number of LUT inputs ;                                  ;
+;     -- 4 input functions                    ; 89                               ;
+;     -- 3 input functions                    ; 60                               ;
+;     -- <=2 input functions                  ; 95                               ;
+;                                             ;                                  ;
+; Logic elements by mode                      ;                                  ;
+;     -- normal mode                          ; 213                              ;
+;     -- arithmetic mode                      ; 31                               ;
+;                                             ;                                  ;
+; Total registers                             ; 162                              ;
+;     -- Dedicated logic registers            ; 162                              ;
+;     -- I/O registers                        ; 0                                ;
+;                                             ;                                  ;
+; I/O pins                                    ; 104                              ;
+;                                             ;                                  ;
+; Embedded Multiplier 9-bit elements          ; 0                                ;
+;                                             ;                                  ;
+; Maximum fan-out node                        ; divisorClock:divclock1|out_clock ;
+; Maximum fan-out                             ; 87                               ;
+; Total fan-out                               ; 1324                             ;
+; Average fan-out                             ; 2.16                             ;
++---------------------------------------------+----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
++-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+---------------+--------------+
+; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name   ; Library Name ;
++-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+---------------+--------------+
+; |urnatp                       ; 244 (0)             ; 162 (0)                   ; 0           ; 0            ; 0       ; 0         ; 104  ; 0            ; |urnatp                          ; urnatp        ; work         ;
+;    |bcd7convert:bcd7convert0| ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|bcd7convert:bcd7convert0 ; bcd7convert   ; work         ;
+;    |bcd7convert:bcd7convert1| ; 11 (11)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|bcd7convert:bcd7convert1 ; bcd7convert   ; work         ;
+;    |bcd7convert:bcd7convert2| ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|bcd7convert:bcd7convert2 ; bcd7convert   ; work         ;
+;    |bcd7convert:bcd7convert4| ; 11 (11)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|bcd7convert:bcd7convert4 ; bcd7convert   ; work         ;
+;    |bcd7convert:bcd7convert5| ; 11 (11)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|bcd7convert:bcd7convert5 ; bcd7convert   ; work         ;
+;    |bcd7convert:bcd7convert6| ; 11 (11)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|bcd7convert:bcd7convert6 ; bcd7convert   ; work         ;
+;    |bcd7convert:bcd7convert7| ; 11 (11)             ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|bcd7convert:bcd7convert7 ; bcd7convert   ; work         ;
+;    |contadorBCD:bcdModule0_0| ; 6 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|contadorBCD:bcdModule0_0 ; contadorBCD   ; work         ;
+;    |contadorBCD:bcdModule1_0| ; 6 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|contadorBCD:bcdModule1_0 ; contadorBCD   ; work         ;
+;    |contadorBCD:bcdModule2_0| ; 6 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|contadorBCD:bcdModule2_0 ; contadorBCD   ; work         ;
+;    |contadorBCD:bcdModule3_0| ; 6 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|contadorBCD:bcdModule3_0 ; contadorBCD   ; work         ;
+;    |contadorBCD:bcdModule4_0| ; 6 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|contadorBCD:bcdModule4_0 ; contadorBCD   ; work         ;
+;    |displayModule:display0|   ; 42 (42)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|displayModule:display0   ; displayModule ; work         ;
+;    |divisorClock:divclock1|   ; 57 (57)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|divisorClock:divclock1   ; divisorClock  ; work         ;
+;    |urna:urna0|               ; 56 (56)             ; 47 (47)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urnatp|urna:urna0               ; urna          ; work         ;
++-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                    ;
++-----------------------------------------------+-------------------------------------------------------+
+; Register name                                 ; Reason for Removal                                    ;
++-----------------------------------------------+-------------------------------------------------------+
+; displayModule:display0|bcdo0[1]               ; Stuck at VCC due to stuck port data_in                ;
+; displayModule:display0|bcdo0[2]               ; Stuck at GND due to stuck port data_in                ;
+; displayModule:display0|bcdo0[3]               ; Stuck at VCC due to stuck port data_in                ;
+; contadorBCD:bcdModule4_4|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule4_3|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule4_2|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule4_1|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule4_0|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule3_4|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule3_3|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule3_2|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule3_1|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule3_0|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule2_4|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule2_3|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule2_2|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule2_1|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule2_0|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule1_4|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule1_3|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule1_2|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule1_1|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule1_0|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule0_4|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule0_3|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule0_2|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule0_1|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule0_0|overflow             ; Stuck at GND due to stuck port data_in                ;
+; contadorBCD:bcdModule4_5|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule4_4|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule4_3|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule4_2|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule4_1|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule3_5|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule3_4|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule3_3|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule3_2|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule3_1|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule2_5|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule2_4|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule2_3|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule2_2|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule2_1|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule1_5|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule1_4|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule1_3|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule1_2|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule1_1|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule0_5|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule0_4|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule0_3|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule0_2|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; contadorBCD:bcdModule0_1|valor[0..3]          ; Stuck at GND due to stuck port clock                  ;
+; bcd7convert:bcd7convert3|SeteSegmentos[0]     ; Merged with bcd7convert:bcd7convert2|SeteSegmentos[0] ;
+; bcd7convert:bcd7convert3|SeteSegmentos[1]     ; Merged with bcd7convert:bcd7convert2|SeteSegmentos[1] ;
+; bcd7convert:bcd7convert3|SeteSegmentos[2]     ; Merged with bcd7convert:bcd7convert2|SeteSegmentos[2] ;
+; bcd7convert:bcd7convert3|SeteSegmentos[4]     ; Merged with bcd7convert:bcd7convert2|SeteSegmentos[4] ;
+; bcd7convert:bcd7convert3|SeteSegmentos[5]     ; Merged with bcd7convert:bcd7convert2|SeteSegmentos[5] ;
+; displayModule:display0|bcdo2[3]               ; Merged with displayModule:display0|bcdo2[1]           ;
+; displayModule:display0|bcdo3[1,3]             ; Merged with displayModule:display0|bcdo2[1]           ;
+; displayModule:display0|bcdo2[2]               ; Merged with displayModule:display0|bcdo2[0]           ;
+; displayModule:display0|bcdo3[0,2]             ; Merged with displayModule:display0|bcdo2[0]           ;
+; bcd7convert:bcd7convert3|SeteSegmentos[3]     ; Merged with bcd7convert:bcd7convert2|SeteSegmentos[3] ;
+; bcd7convert:bcd7convert3|SeteSegmentos[6]     ; Merged with bcd7convert:bcd7convert2|SeteSegmentos[6] ;
+; bcd7convert:bcd7convert0|SeteSegmentos[1,2,6] ; Stuck at VCC due to stuck port data_in                ;
+; displayModule:display0|bcdo2[0]               ; Stuck at GND due to stuck port data_in                ;
+; bcd7convert:bcd7convert2|SeteSegmentos[6]     ; Stuck at VCC due to stuck port data_in                ;
+; bcd7convert:bcd7convert2|SeteSegmentos[1..5]  ; Merged with bcd7convert:bcd7convert2|SeteSegmentos[0] ;
+; Total Number of Removed Registers = 151       ;                                                       ;
++-----------------------------------------------+-------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                ;
++-----------------------------------+---------------------------+----------------------------------------------------------------------------+
+; Register name                     ; Reason for Removal        ; Registers Removed due to This Register                                     ;
++-----------------------------------+---------------------------+----------------------------------------------------------------------------+
+; contadorBCD:bcdModule4_4|overflow ; Stuck at GND              ; contadorBCD:bcdModule4_5|valor[0], contadorBCD:bcdModule4_5|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule4_5|valor[2], contadorBCD:bcdModule4_5|valor[3],      ;
+;                                   ;                           ; displayModule:display0|bcdo2[0], bcd7convert:bcd7convert2|SeteSegmentos[6] ;
+; contadorBCD:bcdModule4_3|overflow ; Stuck at GND              ; contadorBCD:bcdModule4_4|valor[0], contadorBCD:bcdModule4_4|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule4_4|valor[2], contadorBCD:bcdModule4_4|valor[3]       ;
+; contadorBCD:bcdModule4_2|overflow ; Stuck at GND              ; contadorBCD:bcdModule4_3|valor[0], contadorBCD:bcdModule4_3|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule4_3|valor[2], contadorBCD:bcdModule4_3|valor[3]       ;
+; contadorBCD:bcdModule4_1|overflow ; Stuck at GND              ; contadorBCD:bcdModule4_2|valor[0], contadorBCD:bcdModule4_2|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule4_2|valor[2], contadorBCD:bcdModule4_2|valor[3]       ;
+; contadorBCD:bcdModule4_0|overflow ; Stuck at GND              ; contadorBCD:bcdModule4_1|valor[0], contadorBCD:bcdModule4_1|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule4_1|valor[2], contadorBCD:bcdModule4_1|valor[3]       ;
+; contadorBCD:bcdModule3_4|overflow ; Stuck at GND              ; contadorBCD:bcdModule3_5|valor[0], contadorBCD:bcdModule3_5|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule3_5|valor[2], contadorBCD:bcdModule3_5|valor[3]       ;
+; contadorBCD:bcdModule3_3|overflow ; Stuck at GND              ; contadorBCD:bcdModule3_4|valor[0], contadorBCD:bcdModule3_4|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule3_4|valor[2], contadorBCD:bcdModule3_4|valor[3]       ;
+; contadorBCD:bcdModule3_2|overflow ; Stuck at GND              ; contadorBCD:bcdModule3_3|valor[0], contadorBCD:bcdModule3_3|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule3_3|valor[2], contadorBCD:bcdModule3_3|valor[3]       ;
+; contadorBCD:bcdModule3_1|overflow ; Stuck at GND              ; contadorBCD:bcdModule3_2|valor[0], contadorBCD:bcdModule3_2|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule3_2|valor[2], contadorBCD:bcdModule3_2|valor[3]       ;
+; contadorBCD:bcdModule3_0|overflow ; Stuck at GND              ; contadorBCD:bcdModule3_1|valor[0], contadorBCD:bcdModule3_1|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule3_1|valor[2], contadorBCD:bcdModule3_1|valor[3]       ;
+; contadorBCD:bcdModule2_4|overflow ; Stuck at GND              ; contadorBCD:bcdModule2_5|valor[0], contadorBCD:bcdModule2_5|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule2_5|valor[2], contadorBCD:bcdModule2_5|valor[3]       ;
+; contadorBCD:bcdModule2_3|overflow ; Stuck at GND              ; contadorBCD:bcdModule2_4|valor[0], contadorBCD:bcdModule2_4|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule2_4|valor[2], contadorBCD:bcdModule2_4|valor[3]       ;
+; contadorBCD:bcdModule2_2|overflow ; Stuck at GND              ; contadorBCD:bcdModule2_3|valor[0], contadorBCD:bcdModule2_3|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule2_3|valor[2], contadorBCD:bcdModule2_3|valor[3]       ;
+; contadorBCD:bcdModule2_1|overflow ; Stuck at GND              ; contadorBCD:bcdModule2_2|valor[0], contadorBCD:bcdModule2_2|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule2_2|valor[2], contadorBCD:bcdModule2_2|valor[3]       ;
+; contadorBCD:bcdModule2_0|overflow ; Stuck at GND              ; contadorBCD:bcdModule2_1|valor[0], contadorBCD:bcdModule2_1|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule2_1|valor[2], contadorBCD:bcdModule2_1|valor[3]       ;
+; contadorBCD:bcdModule1_4|overflow ; Stuck at GND              ; contadorBCD:bcdModule1_5|valor[0], contadorBCD:bcdModule1_5|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule1_5|valor[2], contadorBCD:bcdModule1_5|valor[3]       ;
+; contadorBCD:bcdModule1_3|overflow ; Stuck at GND              ; contadorBCD:bcdModule1_4|valor[0], contadorBCD:bcdModule1_4|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule1_4|valor[2], contadorBCD:bcdModule1_4|valor[3]       ;
+; contadorBCD:bcdModule1_2|overflow ; Stuck at GND              ; contadorBCD:bcdModule1_3|valor[0], contadorBCD:bcdModule1_3|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule1_3|valor[2], contadorBCD:bcdModule1_3|valor[3]       ;
+; contadorBCD:bcdModule1_1|overflow ; Stuck at GND              ; contadorBCD:bcdModule1_2|valor[0], contadorBCD:bcdModule1_2|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule1_2|valor[2], contadorBCD:bcdModule1_2|valor[3]       ;
+; contadorBCD:bcdModule1_0|overflow ; Stuck at GND              ; contadorBCD:bcdModule1_1|valor[0], contadorBCD:bcdModule1_1|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule1_1|valor[2], contadorBCD:bcdModule1_1|valor[3]       ;
+; contadorBCD:bcdModule0_4|overflow ; Stuck at GND              ; contadorBCD:bcdModule0_5|valor[0], contadorBCD:bcdModule0_5|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule0_5|valor[2], contadorBCD:bcdModule0_5|valor[3]       ;
+; contadorBCD:bcdModule0_3|overflow ; Stuck at GND              ; contadorBCD:bcdModule0_4|valor[0], contadorBCD:bcdModule0_4|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule0_4|valor[2], contadorBCD:bcdModule0_4|valor[3]       ;
+; contadorBCD:bcdModule0_2|overflow ; Stuck at GND              ; contadorBCD:bcdModule0_3|valor[0], contadorBCD:bcdModule0_3|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule0_3|valor[2], contadorBCD:bcdModule0_3|valor[3]       ;
+; contadorBCD:bcdModule0_1|overflow ; Stuck at GND              ; contadorBCD:bcdModule0_2|valor[0], contadorBCD:bcdModule0_2|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule0_2|valor[2], contadorBCD:bcdModule0_2|valor[3]       ;
+; contadorBCD:bcdModule0_0|overflow ; Stuck at GND              ; contadorBCD:bcdModule0_1|valor[0], contadorBCD:bcdModule0_1|valor[1],      ;
+;                                   ; due to stuck port data_in ; contadorBCD:bcdModule0_1|valor[2], contadorBCD:bcdModule0_1|valor[3]       ;
+; displayModule:display0|bcdo0[1]   ; Stuck at VCC              ; bcd7convert:bcd7convert0|SeteSegmentos[1],                                 ;
+;                                   ; due to stuck port data_in ; bcd7convert:bcd7convert0|SeteSegmentos[2],                                 ;
+;                                   ;                           ; bcd7convert:bcd7convert0|SeteSegmentos[6]                                  ;
++-----------------------------------+---------------------------+----------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 162   ;
+; Number of registers using Synchronous Clear  ; 8     ;
+; Number of registers using Synchronous Load   ; 15    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 81    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |urnatp|contadorBCD:bcdModule0_0|valor[0]         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |urnatp|contadorBCD:bcdModule1_0|valor[3]         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |urnatp|contadorBCD:bcdModule2_0|valor[1]         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |urnatp|contadorBCD:bcdModule3_0|valor[1]         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |urnatp|contadorBCD:bcdModule4_0|valor[1]         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo4[2]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo4[3]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo5[2]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo5[3]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo6[2]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo6[3]           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |urnatp|urna:urna0|next_digito3[3]                ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |urnatp|urna:urna0|next_digito4[1]                ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |urnatp|urna:urna0|next_digito2[3]                ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |urnatp|urna:urna0|next_digito1[3]                ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |urnatp|urna:urna0|next_estado[0]                 ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert7|SeteSegmentos[6] ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert6|SeteSegmentos[3] ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert5|SeteSegmentos[6] ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert4|SeteSegmentos[5] ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 56 LEs               ; 14 LEs                 ; Yes        ; |urnatp|bcd7convert:bcd7convert1|SeteSegmentos[5] ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; Yes        ; |urnatp|displayModule:display0|bcdo7[0]           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: urna:urna0 ;
++--------------------+------------------+-----------------+
+; Parameter Name     ; Value            ; Type            ;
++--------------------+------------------+-----------------+
+; matriculaArthur    ; 0011010100000011 ; Unsigned Binary ;
+; matriculaLeandro   ; 0011010100010011 ; Unsigned Binary ;
+; matriculaMateus    ; 0011010010001001 ; Unsigned Binary ;
+; matriculaPablo     ; 0011010010000000 ; Unsigned Binary ;
+; aguardando1Dig     ; 000              ; Unsigned Binary ;
+; aguardando2Dig     ; 001              ; Unsigned Binary ;
+; aguardando3Dig     ; 010              ; Unsigned Binary ;
+; aguardando4Dig     ; 011              ; Unsigned Binary ;
+; aguardandoConfirma ; 100              ; Unsigned Binary ;
+; resetando          ; 111              ; Unsigned Binary ;
++--------------------+------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: displayModule:display0 ;
++--------------------+-------+----------------------------------------+
+; Parameter Name     ; Value ; Type                                   ;
++--------------------+-------+----------------------------------------+
+; aguardando1Dig     ; 000   ; Unsigned Binary                        ;
+; aguardando2Dig     ; 001   ; Unsigned Binary                        ;
+; aguardando3Dig     ; 010   ; Unsigned Binary                        ;
+; aguardando4Dig     ; 011   ; Unsigned Binary                        ;
+; aguardandoConfirma ; 100   ; Unsigned Binary                        ;
+; resetando          ; 111   ; Unsigned Binary                        ;
+; mostrandoArthur    ; 000   ; Unsigned Binary                        ;
+; mostrandoLeandro   ; 001   ; Unsigned Binary                        ;
+; mostrandoMateus    ; 010   ; Unsigned Binary                        ;
+; mostrandoPablo     ; 011   ; Unsigned Binary                        ;
+; mostrandoNulo      ; 100   ; Unsigned Binary                        ;
++--------------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "votoValido:votoValido0"                                                               ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; valido ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; nulo   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "contadorBCD:bcdModule4_5"  ;
++----------+--------+----------+------------------------+
+; Port     ; Type   ; Severity ; Details                ;
++----------+--------+----------+------------------------+
+; overflow ; Output ; Info     ; Explicitly unconnected ;
++----------+--------+----------+------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "contadorBCD:bcdModule3_5"  ;
++----------+--------+----------+------------------------+
+; Port     ; Type   ; Severity ; Details                ;
++----------+--------+----------+------------------------+
+; overflow ; Output ; Info     ; Explicitly unconnected ;
++----------+--------+----------+------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "contadorBCD:bcdModule2_5"  ;
++----------+--------+----------+------------------------+
+; Port     ; Type   ; Severity ; Details                ;
++----------+--------+----------+------------------------+
+; overflow ; Output ; Info     ; Explicitly unconnected ;
++----------+--------+----------+------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "contadorBCD:bcdModule1_5"  ;
++----------+--------+----------+------------------------+
+; Port     ; Type   ; Severity ; Details                ;
++----------+--------+----------+------------------------+
+; overflow ; Output ; Info     ; Explicitly unconnected ;
++----------+--------+----------+------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "contadorBCD:bcdModule0_5"  ;
++----------+--------+----------+------------------------+
+; Port     ; Type   ; Severity ; Details                ;
++----------+--------+----------+------------------------+
+; overflow ; Output ; Info     ; Explicitly unconnected ;
++----------+--------+----------+------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 104                         ;
+; cycloneiii_ff         ; 162                         ;
+;     ENA               ; 65                          ;
+;     ENA SCLR          ; 6                           ;
+;     ENA SLD           ; 10                          ;
+;     SCLR              ; 2                           ;
+;     SLD               ; 5                           ;
+;     plain             ; 74                          ;
+; cycloneiii_lcell_comb ; 246                         ;
+;     arith             ; 31                          ;
+;         2 data inputs ; 31                          ;
+;     normal            ; 215                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 59                          ;
+;         3 data inputs ; 60                          ;
+;         4 data inputs ; 89                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.50                        ;
+; Average LUT depth     ; 2.10                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Dec 01 23:31:10 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off urnatp -c urnatp
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file urna.v
+    Info (12023): Found entity 1: urna File: C:/Users/mateusps10/Desktop/urnahenrique/urna.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file displaymodule.v
+    Info (12023): Found entity 1: displayModule File: C:/Users/mateusps10/Desktop/urnahenrique/displayModule.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contadorbcd.v
+    Info (12023): Found entity 1: contadorBCD File: C:/Users/mateusps10/Desktop/urnahenrique/contadorbcd.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd7convert.v
+    Info (12023): Found entity 1: bcd7convert File: C:/Users/mateusps10/Desktop/urnahenrique/bcd7convert.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file divisorclock.v
+    Info (12023): Found entity 1: divisorClock File: C:/Users/mateusps10/Desktop/urnahenrique/divisorClock.v Line: 1
+Warning (12125): Using design file urnatp.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: urnatp File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 6
+Info (12127): Elaborating entity "urnatp" for the top level hierarchy
+Warning (10030): Net "LEDR[14..13]" at urnatp.v(15) has no driver or initial value, using a default initial value '0' File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+Warning (10034): Output port "LEDG[8]" at urnatp.v(14) has no driver File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 14
+Warning (10034): Output port "LEDG[4..0]" at urnatp.v(14) has no driver File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 14
+Warning (10034): Output port "LEDR[12..0]" at urnatp.v(15) has no driver File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+Info (12128): Elaborating entity "divisorClock" for hierarchy "divisorClock:divclock1" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 73
+Info (12128): Elaborating entity "urna" for hierarchy "urna:urna0" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 77
+Warning (10036): Verilog HDL or VHDL warning at urna.v(22): object "next_candidatoLeandro" assigned a value but never read File: C:/Users/mateusps10/Desktop/urnahenrique/urna.v Line: 22
+Info (12128): Elaborating entity "displayModule" for hierarchy "displayModule:display0" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 83
+Info (12128): Elaborating entity "contadorBCD" for hierarchy "contadorBCD:bcdModule0_0" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 85
+Warning (10230): Verilog HDL assignment warning at contadorbcd.v(15): truncated value with size 32 to match size of target (4) File: C:/Users/mateusps10/Desktop/urnahenrique/contadorbcd.v Line: 15
+Info (12128): Elaborating entity "bcd7convert" for hierarchy "bcd7convert:bcd7convert0" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 120
+Warning (12125): Using design file votovalido.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: votoValido File: C:/Users/mateusps10/Desktop/urnahenrique/votovalido.v Line: 1
+Info (12128): Elaborating entity "votoValido" for hierarchy "votoValido:votoValido0" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 129
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDG[0]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 14
+    Warning (13410): Pin "LEDG[1]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 14
+    Warning (13410): Pin "LEDG[2]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 14
+    Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 14
+    Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 14
+    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 14
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[10]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[11]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[12]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[13]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "LEDR[14]" is stuck at GND File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 15
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 25
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 26
+    Warning (13410): Pin "HEX7[1]" is stuck at VCC File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 29
+    Warning (13410): Pin "HEX7[2]" is stuck at VCC File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 29
+    Warning (13410): Pin "HEX7[6]" is stuck at VCC File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 29
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK2_50" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 10
+    Warning (15610): No output dependent on input pin "CLOCK3_50" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 11
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 18
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/mateusps10/Desktop/urnahenrique/urnatp.v Line: 18
+Info (21057): Implemented 360 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 21 input pins
+    Info (21059): Implemented 83 output pins
+    Info (21061): Implemented 256 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 636 megabytes
+    Info: Processing ended: Sat Dec 01 23:31:21 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:24
+
+
