@@ -62,7 +62,7 @@ assign confirma = SW[2];
 assign corrige = SW[3];
 assign escolhaCandidato = SW[13:11];
 assign digitar = SW [17:14];
-assign ledValido = LEDR[14];
+assign ledValido = LEDG[4];
 assign ledNulo = LEDR[13];
 assign resetUrna = reset | corrige;
 

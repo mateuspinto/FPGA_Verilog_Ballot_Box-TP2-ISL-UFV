@@ -1,5 +1,5 @@
 Analysis & Synthesis report for urnatp
-Sun Dec 02 18:04:49 2018
+Sun Dec 02 21:52:10 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -53,7 +53,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 02 18:04:49 2018       ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 02 21:52:10 2018       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; urnatp                                      ;
 ; Top-level Entity Name              ; urnatp                                      ;
@@ -552,7 +552,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -562,7 +562,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Dec 02 18:04:38 2018
+    Info: Processing started: Sun Dec 02 21:51:59 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off urnatp -c urnatp
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -579,19 +579,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file divisor
 Warning (12125): Using design file urnatp.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: urnatp File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 6
 Info (12127): Elaborating entity "urnatp" for the top level hierarchy
-Warning (10030): Net "LEDR[14..13]" at urnatp.v(15) has no driver or initial value, using a default initial value '0' File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 15
+Warning (10030): Net "LEDG[4]" at urnatp.v(14) has no driver or initial value, using a default initial value '0' File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 14
+Warning (10030): Net "LEDR[13]" at urnatp.v(15) has no driver or initial value, using a default initial value '0' File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 15
 Warning (10034): Output port "LEDG[8]" at urnatp.v(14) has no driver File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 14
-Warning (10034): Output port "LEDG[4..0]" at urnatp.v(14) has no driver File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 14
+Warning (10034): Output port "LEDG[3..0]" at urnatp.v(14) has no driver File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 14
+Warning (10034): Output port "LEDR[14]" at urnatp.v(15) has no driver File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 15
 Warning (10034): Output port "LEDR[12..0]" at urnatp.v(15) has no driver File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 15
-Info (12128): Elaborating entity "divisorClock" for hierarchy "divisorClock:divclock1" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 73
-Info (12128): Elaborating entity "urna" for hierarchy "urna:urna0" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 77
-Info (12128): Elaborating entity "displayModule" for hierarchy "displayModule:display0" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 83
-Info (12128): Elaborating entity "contadorBCD" for hierarchy "contadorBCD:bcdModule0_0" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 85
+Info (12128): Elaborating entity "divisorClock" for hierarchy "divisorClock:divclock1" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 74
+Info (12128): Elaborating entity "urna" for hierarchy "urna:urna0" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 78
+Info (12128): Elaborating entity "displayModule" for hierarchy "displayModule:display0" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 85
+Info (12128): Elaborating entity "contadorBCD" for hierarchy "contadorBCD:bcdModule0_0" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 88
 Warning (10230): Verilog HDL assignment warning at contadorbcd.v(14): truncated value with size 32 to match size of target (4) File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/contadorbcd.v Line: 14
-Info (12128): Elaborating entity "bcd7convert" for hierarchy "bcd7convert:bcd7convert0" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 120
+Info (12128): Elaborating entity "bcd7convert" for hierarchy "bcd7convert:bcd7convert0" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 128
 Warning (12125): Using design file votovalido.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: votoValido File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/votovalido.v Line: 1
-Info (12128): Elaborating entity "votoValido" for hierarchy "votoValido:votoValido0" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 129
+Info (12128): Elaborating entity "votoValido" for hierarchy "votoValido:votoValido0" File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 137
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDG[0]" is stuck at GND File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 14
     Warning (13410): Pin "LEDG[1]" is stuck at GND File: C:/Users/mateusps10/Desktop/TP2-ISL-URNA/urnatp.v Line: 14
@@ -635,10 +637,10 @@ Info (21057): Implemented 347 device resources after synthesis - the final resou
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 83 output pins
     Info (21061): Implemented 243 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
-    Info: Peak virtual memory: 627 megabytes
-    Info: Processing ended: Sun Dec 02 18:04:49 2018
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
+    Info: Peak virtual memory: 626 megabytes
+    Info: Processing ended: Sun Dec 02 21:52:10 2018
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Total CPU time (on all processors): 00:00:25
 
 
