@@ -1,5 +1,5 @@
 $date
-	Sat Dec 01 23:38:11 2018
+	Sun Dec 02 00:38:02 2018
 $end
 $version
 	Icarus Verilog
@@ -8,8 +8,1527 @@ $timescale
 	1s
 $end
 $scope module testbench $end
+$var wire 2 ! votoValido [1:0] $end
+$var wire 3 " next_estado [2:0] $end
+$var wire 3 # estado [2:0] $end
+$var wire 4 $ digito4 [3:0] $end
+$var wire 4 % digito3 [3:0] $end
+$var wire 4 & digito2 [3:0] $end
+$var wire 4 ' digito1 [3:0] $end
+$var wire 1 ( clock $end
+$var wire 1 ) candidatoPablo $end
+$var wire 1 * candidatoNulo $end
+$var wire 1 + candidatoMateus $end
+$var wire 1 , candidatoLeandro $end
+$var wire 1 - candidatoArthur $end
+$var wire 1 . bcdOver4_4_5 $end
+$var wire 1 / bcdOver4_3_4 $end
+$var wire 1 0 bcdOver4_2_3 $end
+$var wire 1 1 bcdOver4_1_2 $end
+$var wire 1 2 bcdOver4_0_1 $end
+$var wire 1 3 bcdOver3_4_5 $end
+$var wire 1 4 bcdOver3_3_4 $end
+$var wire 1 5 bcdOver3_2_3 $end
+$var wire 1 6 bcdOver3_1_2 $end
+$var wire 1 7 bcdOver3_0_1 $end
+$var wire 1 8 bcdOver2_4_5 $end
+$var wire 1 9 bcdOver2_3_4 $end
+$var wire 1 : bcdOver2_2_3 $end
+$var wire 1 ; bcdOver2_1_2 $end
+$var wire 1 < bcdOver2_0_1 $end
+$var wire 1 = bcdOver1_4_5 $end
+$var wire 1 > bcdOver1_3_4 $end
+$var wire 1 ? bcdOver1_2_3 $end
+$var wire 1 @ bcdOver1_1_2 $end
+$var wire 1 A bcdOver1_0_1 $end
+$var wire 1 B bcdOver0_4_5 $end
+$var wire 1 C bcdOver0_3_4 $end
+$var wire 1 D bcdOver0_2_3 $end
+$var wire 1 E bcdOver0_1_2 $end
+$var wire 1 F bcdOver0_0_1 $end
+$var wire 4 G bcd4_5 [3:0] $end
+$var wire 4 H bcd4_4 [3:0] $end
+$var wire 4 I bcd4_3 [3:0] $end
+$var wire 4 J bcd4_2 [3:0] $end
+$var wire 4 K bcd4_1 [3:0] $end
+$var wire 4 L bcd4_0 [3:0] $end
+$var wire 4 M bcd3_5 [3:0] $end
+$var wire 4 N bcd3_4 [3:0] $end
+$var wire 4 O bcd3_3 [3:0] $end
+$var wire 4 P bcd3_2 [3:0] $end
+$var wire 4 Q bcd3_1 [3:0] $end
+$var wire 4 R bcd3_0 [3:0] $end
+$var wire 4 S bcd2_5 [3:0] $end
+$var wire 4 T bcd2_4 [3:0] $end
+$var wire 4 U bcd2_3 [3:0] $end
+$var wire 4 V bcd2_2 [3:0] $end
+$var wire 4 W bcd2_1 [3:0] $end
+$var wire 4 X bcd2_0 [3:0] $end
+$var wire 4 Y bcd1_5 [3:0] $end
+$var wire 4 Z bcd1_4 [3:0] $end
+$var wire 4 [ bcd1_3 [3:0] $end
+$var wire 4 \ bcd1_2 [3:0] $end
+$var wire 4 ] bcd1_1 [3:0] $end
+$var wire 4 ^ bcd1_0 [3:0] $end
+$var wire 4 _ bcd0_5 [3:0] $end
+$var wire 4 ` bcd0_4 [3:0] $end
+$var wire 4 a bcd0_3 [3:0] $end
+$var wire 4 b bcd0_2 [3:0] $end
+$var wire 4 c bcd0_1 [3:0] $end
+$var wire 4 d bcd0_0 [3:0] $end
+$var reg 1 e confirma $end
+$var reg 4 f digitar [3:0] $end
+$var reg 1 g finish $end
+$var reg 1 h reset $end
+$var reg 1 i resetUrna $end
+$var reg 1 j valid $end
+$scope module bcdModule0_0 $end
+$var wire 1 h reset $end
+$var wire 1 ( clockat $end
+$var wire 1 - clock $end
+$var reg 1 k next_overflow $end
+$var reg 4 l next_valor [3:0] $end
+$var reg 1 F overflow $end
+$var reg 4 m valor [3:0] $end
+$upscope $end
+$scope module bcdModule0_1 $end
+$var wire 1 F clock $end
+$var wire 1 n clockat $end
+$var wire 1 h reset $end
+$var reg 1 o next_overflow $end
+$var reg 4 p next_valor [3:0] $end
+$var reg 1 E overflow $end
+$var reg 4 q valor [3:0] $end
+$upscope $end
+$scope module bcdModule0_2 $end
+$var wire 1 E clock $end
+$var wire 1 r clockat $end
+$var wire 1 h reset $end
+$var reg 1 s next_overflow $end
+$var reg 4 t next_valor [3:0] $end
+$var reg 1 D overflow $end
+$var reg 4 u valor [3:0] $end
+$upscope $end
+$scope module bcdModule0_3 $end
+$var wire 1 D clock $end
+$var wire 1 v clockat $end
+$var wire 1 h reset $end
+$var reg 1 w next_overflow $end
+$var reg 4 x next_valor [3:0] $end
+$var reg 1 C overflow $end
+$var reg 4 y valor [3:0] $end
+$upscope $end
+$scope module bcdModule0_4 $end
+$var wire 1 C clock $end
+$var wire 1 z clockat $end
+$var wire 1 h reset $end
+$var reg 1 { next_overflow $end
+$var reg 4 | next_valor [3:0] $end
+$var reg 1 B overflow $end
+$var reg 4 } valor [3:0] $end
+$upscope $end
+$scope module bcdModule0_5 $end
+$var wire 1 B clock $end
+$var wire 1 ~ clockat $end
+$var wire 1 h reset $end
+$var reg 1 !" next_overflow $end
+$var reg 4 "" next_valor [3:0] $end
+$var reg 1 #" overflow $end
+$var reg 4 $" valor [3:0] $end
+$upscope $end
+$scope module bcdModule1_0 $end
+$var wire 1 %" clockat $end
+$var wire 1 h reset $end
+$var wire 1 , clock $end
+$var reg 1 &" next_overflow $end
+$var reg 4 '" next_valor [3:0] $end
+$var reg 1 A overflow $end
+$var reg 4 (" valor [3:0] $end
+$upscope $end
+$scope module bcdModule1_1 $end
+$var wire 1 A clock $end
+$var wire 1 )" clockat $end
+$var wire 1 h reset $end
+$var reg 1 *" next_overflow $end
+$var reg 4 +" next_valor [3:0] $end
+$var reg 1 @ overflow $end
+$var reg 4 ," valor [3:0] $end
+$upscope $end
+$scope module bcdModule1_2 $end
+$var wire 1 @ clock $end
+$var wire 1 -" clockat $end
+$var wire 1 h reset $end
+$var reg 1 ." next_overflow $end
+$var reg 4 /" next_valor [3:0] $end
+$var reg 1 ? overflow $end
+$var reg 4 0" valor [3:0] $end
+$upscope $end
+$scope module bcdModule1_3 $end
+$var wire 1 ? clock $end
+$var wire 1 1" clockat $end
+$var wire 1 h reset $end
+$var reg 1 2" next_overflow $end
+$var reg 4 3" next_valor [3:0] $end
+$var reg 1 > overflow $end
+$var reg 4 4" valor [3:0] $end
+$upscope $end
+$scope module bcdModule1_4 $end
+$var wire 1 > clock $end
+$var wire 1 5" clockat $end
+$var wire 1 h reset $end
+$var reg 1 6" next_overflow $end
+$var reg 4 7" next_valor [3:0] $end
+$var reg 1 = overflow $end
+$var reg 4 8" valor [3:0] $end
+$upscope $end
+$scope module bcdModule1_5 $end
+$var wire 1 = clock $end
+$var wire 1 9" clockat $end
+$var wire 1 h reset $end
+$var reg 1 :" next_overflow $end
+$var reg 4 ;" next_valor [3:0] $end
+$var reg 1 <" overflow $end
+$var reg 4 =" valor [3:0] $end
+$upscope $end
+$scope module bcdModule2_0 $end
+$var wire 1 >" clockat $end
+$var wire 1 h reset $end
+$var wire 1 + clock $end
+$var reg 1 ?" next_overflow $end
+$var reg 4 @" next_valor [3:0] $end
+$var reg 1 < overflow $end
+$var reg 4 A" valor [3:0] $end
+$upscope $end
+$scope module bcdModule2_1 $end
+$var wire 1 < clock $end
+$var wire 1 B" clockat $end
+$var wire 1 h reset $end
+$var reg 1 C" next_overflow $end
+$var reg 4 D" next_valor [3:0] $end
+$var reg 1 ; overflow $end
+$var reg 4 E" valor [3:0] $end
+$upscope $end
+$scope module bcdModule2_2 $end
+$var wire 1 ; clock $end
+$var wire 1 F" clockat $end
+$var wire 1 h reset $end
+$var reg 1 G" next_overflow $end
+$var reg 4 H" next_valor [3:0] $end
+$var reg 1 : overflow $end
+$var reg 4 I" valor [3:0] $end
+$upscope $end
+$scope module bcdModule2_3 $end
+$var wire 1 : clock $end
+$var wire 1 J" clockat $end
+$var wire 1 h reset $end
+$var reg 1 K" next_overflow $end
+$var reg 4 L" next_valor [3:0] $end
+$var reg 1 9 overflow $end
+$var reg 4 M" valor [3:0] $end
+$upscope $end
+$scope module bcdModule2_4 $end
+$var wire 1 9 clock $end
+$var wire 1 N" clockat $end
+$var wire 1 h reset $end
+$var reg 1 O" next_overflow $end
+$var reg 4 P" next_valor [3:0] $end
+$var reg 1 8 overflow $end
+$var reg 4 Q" valor [3:0] $end
+$upscope $end
+$scope module bcdModule2_5 $end
+$var wire 1 8 clock $end
+$var wire 1 R" clockat $end
+$var wire 1 h reset $end
+$var reg 1 S" next_overflow $end
+$var reg 4 T" next_valor [3:0] $end
+$var reg 1 U" overflow $end
+$var reg 4 V" valor [3:0] $end
+$upscope $end
+$scope module bcdModule3_0 $end
+$var wire 1 W" clockat $end
+$var wire 1 h reset $end
+$var wire 1 ) clock $end
+$var reg 1 X" next_overflow $end
+$var reg 4 Y" next_valor [3:0] $end
+$var reg 1 7 overflow $end
+$var reg 4 Z" valor [3:0] $end
+$upscope $end
+$scope module bcdModule3_1 $end
+$var wire 1 7 clock $end
+$var wire 1 [" clockat $end
+$var wire 1 h reset $end
+$var reg 1 \" next_overflow $end
+$var reg 4 ]" next_valor [3:0] $end
+$var reg 1 6 overflow $end
+$var reg 4 ^" valor [3:0] $end
+$upscope $end
+$scope module bcdModule3_2 $end
+$var wire 1 6 clock $end
+$var wire 1 _" clockat $end
+$var wire 1 h reset $end
+$var reg 1 `" next_overflow $end
+$var reg 4 a" next_valor [3:0] $end
+$var reg 1 5 overflow $end
+$var reg 4 b" valor [3:0] $end
+$upscope $end
+$scope module bcdModule3_3 $end
+$var wire 1 5 clock $end
+$var wire 1 c" clockat $end
+$var wire 1 h reset $end
+$var reg 1 d" next_overflow $end
+$var reg 4 e" next_valor [3:0] $end
+$var reg 1 4 overflow $end
+$var reg 4 f" valor [3:0] $end
+$upscope $end
+$scope module bcdModule3_4 $end
+$var wire 1 4 clock $end
+$var wire 1 g" clockat $end
+$var wire 1 h reset $end
+$var reg 1 h" next_overflow $end
+$var reg 4 i" next_valor [3:0] $end
+$var reg 1 3 overflow $end
+$var reg 4 j" valor [3:0] $end
+$upscope $end
+$scope module bcdModule3_5 $end
+$var wire 1 3 clock $end
+$var wire 1 k" clockat $end
+$var wire 1 h reset $end
+$var reg 1 l" next_overflow $end
+$var reg 4 m" next_valor [3:0] $end
+$var reg 1 n" overflow $end
+$var reg 4 o" valor [3:0] $end
+$upscope $end
+$scope module bcdModule4_0 $end
+$var wire 1 p" clockat $end
+$var wire 1 h reset $end
+$var wire 1 * clock $end
+$var reg 1 q" next_overflow $end
+$var reg 4 r" next_valor [3:0] $end
+$var reg 1 2 overflow $end
+$var reg 4 s" valor [3:0] $end
+$upscope $end
+$scope module bcdModule4_1 $end
+$var wire 1 2 clock $end
+$var wire 1 t" clockat $end
+$var wire 1 h reset $end
+$var reg 1 u" next_overflow $end
+$var reg 4 v" next_valor [3:0] $end
+$var reg 1 1 overflow $end
+$var reg 4 w" valor [3:0] $end
+$upscope $end
+$scope module bcdModule4_2 $end
+$var wire 1 1 clock $end
+$var wire 1 x" clockat $end
+$var wire 1 h reset $end
+$var reg 1 y" next_overflow $end
+$var reg 4 z" next_valor [3:0] $end
+$var reg 1 0 overflow $end
+$var reg 4 {" valor [3:0] $end
+$upscope $end
+$scope module bcdModule4_3 $end
+$var wire 1 0 clock $end
+$var wire 1 |" clockat $end
+$var wire 1 h reset $end
+$var reg 1 }" next_overflow $end
+$var reg 4 ~" next_valor [3:0] $end
+$var reg 1 / overflow $end
+$var reg 4 !# valor [3:0] $end
+$upscope $end
+$scope module bcdModule4_4 $end
+$var wire 1 / clock $end
+$var wire 1 "# clockat $end
+$var wire 1 h reset $end
+$var reg 1 ## next_overflow $end
+$var reg 4 $# next_valor [3:0] $end
+$var reg 1 . overflow $end
+$var reg 4 %# valor [3:0] $end
+$upscope $end
+$scope module bcdModule4_5 $end
+$var wire 1 . clock $end
+$var wire 1 &# clockat $end
+$var wire 1 h reset $end
+$var reg 1 '# next_overflow $end
+$var reg 4 (# next_valor [3:0] $end
+$var reg 1 )# overflow $end
+$var reg 4 *# valor [3:0] $end
+$upscope $end
+$scope module clock0 $end
+$var reg 1 ( clk $end
+$upscope $end
+$scope module urna0 $end
+$var wire 1 ( clock $end
+$var wire 1 e confirma $end
+$var wire 4 +# digit [3:0] $end
+$var wire 1 g finish $end
+$var wire 1 i reset $end
+$var wire 1 j valid $end
+$var reg 1 - candidatoArthur $end
+$var reg 1 , candidatoLeandro $end
+$var reg 1 + candidatoMateus $end
+$var reg 1 * candidatoNulo $end
+$var reg 1 ) candidatoPablo $end
+$var reg 4 ,# digito1 [3:0] $end
+$var reg 4 -# digito2 [3:0] $end
+$var reg 4 .# digito3 [3:0] $end
+$var reg 4 /# digito4 [3:0] $end
+$var reg 3 0# estado [2:0] $end
+$var reg 1 1# next_candidatoArthur $end
+$var reg 1 2# next_candidatoLeandro $end
+$var reg 1 3# next_candidatoMateus $end
+$var reg 1 4# next_candidatoNulo $end
+$var reg 1 5# next_candidatoPablo $end
+$var reg 4 6# next_digito1 [3:0] $end
+$var reg 4 7# next_digito2 [3:0] $end
+$var reg 4 8# next_digito3 [3:0] $end
+$var reg 4 9# next_digito4 [3:0] $end
+$var reg 3 :# next_estado [2:0] $end
+$var reg 2 ;# next_votoValido [1:0] $end
+$var reg 2 <# votoValido [1:0] $end
+$upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
+bx <#
+bx ;#
+bx :#
+bx 9#
+bx 8#
+bx 7#
+bx 6#
+x5#
+x4#
+x3#
+x2#
+x1#
+bx 0#
+bx /#
+bx .#
+bx -#
+bx ,#
+b0 +#
+bx *#
+x)#
+bx (#
+x'#
+z&#
+bx %#
+bx $#
+x##
+z"#
+bx !#
+bx ~"
+x}"
+z|"
+bx {"
+bx z"
+xy"
+zx"
+bx w"
+bx v"
+xu"
+zt"
+bx s"
+bx r"
+xq"
+zp"
+bx o"
+xn"
+bx m"
+xl"
+zk"
+bx j"
+bx i"
+xh"
+zg"
+bx f"
+bx e"
+xd"
+zc"
+bx b"
+bx a"
+x`"
+z_"
+bx ^"
+bx ]"
+x\"
+z["
+bx Z"
+bx Y"
+xX"
+zW"
+bx V"
+xU"
+bx T"
+xS"
+zR"
+bx Q"
+bx P"
+xO"
+zN"
+bx M"
+bx L"
+xK"
+zJ"
+bx I"
+bx H"
+xG"
+zF"
+bx E"
+bx D"
+xC"
+zB"
+bx A"
+bx @"
+x?"
+z>"
+bx ="
+x<"
+bx ;"
+x:"
+z9"
+bx 8"
+bx 7"
+x6"
+z5"
+bx 4"
+bx 3"
+x2"
+z1"
+bx 0"
+bx /"
+x."
+z-"
+bx ,"
+bx +"
+x*"
+z)"
+bx ("
+bx '"
+x&"
+z%"
+bx $"
+x#"
+bx ""
+x!"
+z~
+bx }
+bx |
+x{
+zz
+bx y
+bx x
+xw
+zv
+bx u
+bx t
+xs
+zr
+bx q
+bx p
+xo
+zn
+bx m
+bx l
+xk
+0j
+0i
+0h
+0g
+b0 f
+0e
+bx d
+bx c
+bx b
+bx a
+bx `
+bx _
+bx ^
+bx ]
+bx \
+bx [
+bx Z
+bx Y
+bx X
+bx W
+bx V
+bx U
+bx T
+bx S
+bx R
+bx Q
+bx P
+bx O
+bx N
+bx M
+bx L
+bx K
+bx J
+bx I
+bx H
+bx G
+xF
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+0(
+bx '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
 $end
+#1
+1(
+#2
+0(
+#3
+1(
+#4
+0(
+#5
+1(
+#6
+0(
+#7
+1(
+#8
+0(
+#9
+1(
+#10
+0(
+#11
+1(
+#12
+0(
+#13
+1(
+#14
+0(
+#15
+1(
+#16
+0(
+#17
+1(
+#18
+0(
+#19
+1(
+#20
+0(
+1h
+1i
+#21
+b111 #
+b111 0#
+b0 !
+b0 <#
+b0 $
+b0 /#
+b0 %
+b0 .#
+b0 &
+b0 -#
+b0 '
+b0 ,#
+0*
+0)
+0+
+0,
+0-
+0F
+b0 d
+b0 m
+1(
+#22
+0(
+#23
+1(
+#24
+0(
+#25
+1(
+#26
+0(
+#27
+1(
+#28
+0(
+#29
+1(
+#30
+0(
+#31
+1(
+#32
+0(
+#33
+1(
+#34
+0(
+#35
+1(
+#36
+0(
+#37
+1(
+#38
+0(
+#39
+1(
+#40
+b0 6#
+b0 "
+b0 :#
+0(
+1j
+#41
+1(
+#42
+0(
+#43
+1(
+#44
+0(
+#45
+1(
+#46
+0(
+#47
+1(
+#48
+0(
+#49
+1(
+#50
+0(
+#51
+1(
+#52
+0(
+#53
+1(
+#54
+0(
+#55
+1(
+#56
+0(
+#57
+1(
+#58
+0(
+#59
+1(
+#60
+0(
+0j
+#61
+1(
+#62
+0(
+#63
+1(
+#64
+0(
+#65
+1(
+#66
+0(
+#67
+1(
+#68
+0(
+#69
+1(
+#70
+0(
+#71
+1(
+#72
+0(
+#73
+1(
+#74
+0(
+#75
+1(
+#76
+0(
+#77
+1(
+#78
+0(
+#79
+1(
+#80
+0(
+0h
+0i
+#81
+0q"
+0X"
+0?"
+0&"
+0k
+b0 #
+b0 0#
+bx !
+bx <#
+bx $
+bx /#
+bx %
+bx .#
+bx &
+bx -#
+x*
+x)
+x+
+x,
+x-
+0o
+xF
+bx d
+bx m
+1(
+#82
+0(
+#83
+0F
+1(
+#84
+0(
+#85
+1(
+#86
+0(
+#87
+1(
+#88
+0(
+#89
+1(
+#90
+0(
+#91
+1(
+#92
+0(
+#93
+1(
+#94
+0(
+#95
+1(
+#96
+0(
+#97
+1(
+#98
+0(
+#99
+1(
+#100
+0(
+b11 f
+b11 +#
+#101
+1(
+#102
+0(
+#103
+1(
+#104
+0(
+#105
+1(
+#106
+0(
+#107
+1(
+#108
+0(
+#109
+1(
+#110
+0(
+#111
+1(
+#112
+0(
+#113
+1(
+#114
+0(
+#115
+1(
+#116
+0(
+#117
+1(
+#118
+0(
+#119
+1(
+#120
+b1 "
+b1 :#
+b11 6#
+b0 9#
+b0 8#
+b0 7#
+04#
+05#
+03#
+02#
+01#
+0(
+1j
+#121
+b1 #
+b1 0#
+b0 $
+b0 /#
+b0 %
+b0 .#
+b0 &
+b0 -#
+b11 '
+b11 ,#
+0*
+0)
+0+
+0,
+0-
+1(
+#122
+0(
+#123
+1(
+#124
+0(
+#125
+1(
+#126
+0(
+#127
+1(
+#128
+0(
+#129
+1(
+#130
+0(
+#131
+1(
+#132
+0(
+#133
+1(
+#134
+0(
+#135
+1(
+#136
+0(
+#137
+1(
+#138
+0(
+#139
+1(
+#140
+0(
+0j
+#141
+1(
+#142
+0(
+#143
+1(
+#144
+0(
+#145
+1(
+#146
+0(
+#147
+1(
+#148
+0(
+#149
+1(
+#150
+0(
+#151
+1(
+#152
+0(
+#153
+1(
+#154
+0(
+#155
+1(
+#156
+0(
+#157
+1(
+#158
+0(
+#159
+1(
+#160
+0(
+b100 f
+b100 +#
+#161
+1(
+#162
+0(
+#163
+1(
+#164
+0(
+#165
+1(
+#166
+0(
+#167
+1(
+#168
+0(
+#169
+1(
+#170
+0(
+#171
+1(
+#172
+0(
+#173
+1(
+#174
+0(
+#175
+1(
+#176
+0(
+#177
+1(
+#178
+0(
+#179
+1(
+#180
+b10 "
+b10 :#
+b100 7#
+0(
+1j
+#181
+b10 #
+b10 0#
+b100 &
+b100 -#
+1(
+#182
+0(
+#183
+1(
+#184
+0(
+#185
+1(
+#186
+0(
+#187
+1(
+#188
+0(
+#189
+1(
+#190
+0(
+#191
+1(
+#192
+0(
+#193
+1(
+#194
+0(
+#195
+1(
+#196
+0(
+#197
+1(
+#198
+0(
+#199
+1(
+#200
+0(
+0j
+#201
+1(
+#202
+0(
+#203
+1(
+#204
+0(
+#205
+1(
+#206
+0(
+#207
+1(
+#208
+0(
+#209
+1(
+#210
+0(
+#211
+1(
+#212
+0(
+#213
+1(
+#214
+0(
+#215
+1(
+#216
+0(
+#217
+1(
+#218
+0(
+#219
+1(
+#220
+0(
+b1000 f
+b1000 +#
+#221
+1(
+#222
+0(
+#223
+1(
+#224
+0(
+#225
+1(
+#226
+0(
+#227
+1(
+#228
+0(
+#229
+1(
+#230
+0(
+#231
+1(
+#232
+0(
+#233
+1(
+#234
+0(
+#235
+1(
+#236
+0(
+#237
+1(
+#238
+0(
+#239
+1(
+#240
+b11 "
+b11 :#
+b1000 8#
+0(
+1j
+#241
+b11 #
+b11 0#
+b1000 %
+b1000 .#
+1(
+#242
+0(
+#243
+1(
+#244
+0(
+#245
+1(
+#246
+0(
+#247
+1(
+#248
+0(
+#249
+1(
+#250
+0(
+#251
+1(
+#252
+0(
+#253
+1(
+#254
+0(
+#255
+1(
+#256
+0(
+#257
+1(
+#258
+0(
+#259
+1(
+#260
+0(
+0j
+#261
+1(
+#262
+0(
+#263
+1(
+#264
+0(
+#265
+1(
+#266
+0(
+#267
+1(
+#268
+0(
+#269
+1(
+#270
+0(
+#271
+1(
+#272
+0(
+#273
+1(
+#274
+0(
+#275
+1(
+#276
+0(
+#277
+1(
+#278
+0(
+#279
+1(
+#280
+0(
+b0 f
+b0 +#
+#281
+1(
+#282
+0(
+#283
+1(
+#284
+0(
+#285
+1(
+#286
+0(
+#287
+1(
+#288
+0(
+#289
+1(
+#290
+0(
+#291
+1(
+#292
+0(
+#293
+1(
+#294
+0(
+#295
+1(
+#296
+0(
+#297
+1(
+#298
+0(
+#299
+1(
+#300
+b100 "
+b100 :#
+0(
+1j
+#301
+b100 #
+b100 0#
+1(
+#302
+0(
+#303
+1(
+#304
+0(
+#305
+1(
+#306
+0(
+#307
+1(
+#308
+0(
+#309
+1(
+#310
+0(
+#311
+1(
+#312
+0(
+#313
+1(
+#314
+0(
+#315
+1(
+#316
+0(
+#317
+1(
+#318
+0(
+#319
+1(
+#320
+0(
+0j
+#321
+1(
+#322
+0(
+#323
+1(
+#324
+0(
+#325
+1(
+#326
+0(
+#327
+1(
+#328
+0(
+#329
+1(
+#330
+0(
+#331
+1(
+#332
+0(
+#333
+1(
+#334
+0(
+#335
+1(
+#336
+0(
+#337
+1(
+#338
+0(
+#339
+1(
+#340
+0(
+1e
+#341
+1(
+#342
+0(
+#343
+1(
+#344
+0(
+#345
+1(
+#346
+0(
+#347
+1(
+#348
+0(
+#349
+1(
+#350
+0(
+#351
+1(
+#352
+0(
+#353
+1(
+#354
+0(
+#355
+1(
+#356
+0(
+#357
+1(
+#358
+0(
+#359
+1(
+#360
+b0 "
+b0 :#
+b1 ;#
+15#
+0(
+1j
+#361
+b0 #
+b0 0#
+b1 !
+b1 <#
+1)
+1(
+#362
+0(
+#363
+1(
+#364
+0(
+#365
+1(
+#366
+0(
+#367
+1(
+#368
+0(
+#369
+1(
+#370
+0(
+#371
+1(
+#372
+0(
+#373
+1(
+#374
+0(
+#375
+1(
+#376
+0(
+#377
+1(
+#378
+0(
+#379
+1(
+#380
+0(
+0j
+#381
+1(
+#382
+0(
+#383
+1(
+#384
+0(
+#385
+1(
+#386
+0(
+#387
+1(
+#388
+0(
+#389
+1(
+#390
+0(
+#391
+1(
+#392
+0(
+#393
+1(
+#394
+0(
+#395
+1(
+#396
+0(
+#397
+1(
+#398
+0(
+#399
+1(
+#400
+0(

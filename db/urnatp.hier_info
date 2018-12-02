@@ -158,6 +158,7 @@ valid => next_digito4[3].CLK
 valid => next_candidatoNulo.CLK
 valid => next_candidatoPablo.CLK
 valid => next_candidatoMateus.CLK
+valid => next_candidatoLeandro.CLK
 valid => next_votoValido[0].CLK
 valid => next_votoValido[1].CLK
 valid => next_candidatoArthur.CLK
@@ -232,6 +233,7 @@ confirma => next_votoValido.OUTPUTSELECT
 confirma => next_estado.OUTPUTSELECT
 confirma => next_estado.OUTPUTSELECT
 confirma => next_estado.OUTPUTSELECT
+confirma => next_candidatoLeandro.OUTPUTSELECT
 confirma => next_candidatoMateus.OUTPUTSELECT
 confirma => next_candidatoPablo.OUTPUTSELECT
 confirma => next_candidatoNulo.OUTPUTSELECT
@@ -289,21 +291,21 @@ reset => estado.OUTPUTSELECT
 reset => estado.OUTPUTSELECT
 reset => estado.OUTPUTSELECT
 digit[0] => Mux6.IN1
-digit[0] => Mux14.IN1
-digit[0] => Mux18.IN1
-digit[0] => Mux22.IN1
+digit[0] => Mux15.IN1
+digit[0] => Mux19.IN1
+digit[0] => Mux23.IN1
 digit[1] => Mux5.IN1
-digit[1] => Mux13.IN1
-digit[1] => Mux17.IN1
-digit[1] => Mux21.IN1
+digit[1] => Mux14.IN1
+digit[1] => Mux18.IN1
+digit[1] => Mux22.IN1
 digit[2] => Mux4.IN1
-digit[2] => Mux12.IN1
-digit[2] => Mux16.IN1
-digit[2] => Mux20.IN1
+digit[2] => Mux13.IN1
+digit[2] => Mux17.IN1
+digit[2] => Mux21.IN1
 digit[3] => Mux3.IN1
-digit[3] => Mux11.IN1
-digit[3] => Mux15.IN1
-digit[3] => Mux19.IN1
+digit[3] => Mux12.IN1
+digit[3] => Mux16.IN1
+digit[3] => Mux20.IN1
 digito1[0] <= digito1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 digito1[1] <= digito1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 digito1[2] <= digito1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -657,11 +659,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule0_1
@@ -679,11 +687,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule0_2
@@ -701,11 +715,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule0_3
@@ -723,11 +743,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule0_4
@@ -745,11 +771,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule0_5
@@ -767,11 +799,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule1_0
@@ -789,11 +827,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule1_1
@@ -811,11 +855,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule1_2
@@ -833,11 +883,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule1_3
@@ -855,11 +911,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule1_4
@@ -877,11 +939,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule1_5
@@ -899,11 +967,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule2_0
@@ -921,11 +995,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule2_1
@@ -943,11 +1023,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule2_2
@@ -965,11 +1051,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule2_3
@@ -987,11 +1079,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule2_4
@@ -1009,11 +1107,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule2_5
@@ -1031,11 +1135,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule3_0
@@ -1053,11 +1163,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule3_1
@@ -1075,11 +1191,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule3_2
@@ -1097,11 +1219,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule3_3
@@ -1119,11 +1247,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule3_4
@@ -1141,11 +1275,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule3_5
@@ -1163,11 +1303,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule4_0
@@ -1185,11 +1331,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule4_1
@@ -1207,11 +1359,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule4_2
@@ -1229,11 +1387,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule4_3
@@ -1251,11 +1415,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule4_4
@@ -1273,11 +1443,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|contadorBCD:bcdModule4_5
@@ -1295,11 +1471,17 @@ reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
+reset => overflow.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
 reset => valor.OUTPUTSELECT
-reset => overflow~reg0.ENA
+reset => overflow.OUTPUTSELECT
+clockat => next_overflow.CLK
+clockat => next_valor[0].CLK
+clockat => next_valor[1].CLK
+clockat => next_valor[2].CLK
+clockat => next_valor[3].CLK
 
 
 |urnatp|bcd7convert:bcd7convert0

@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sat Dec 01 23:31:33 2018
+Fitter Status : Successful - Sun Dec 02 00:36:16 2018
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : urnatp
 Top-level Entity Name : urnatp
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 260 / 114,480 ( < 1 % )
-    Total combinational functions : 244 / 114,480 ( < 1 % )
-    Dedicated logic registers : 162 / 114,480 ( < 1 % )
-Total registers : 162
+Total logic elements : 191 / 114,480 ( < 1 % )
+    Total combinational functions : 181 / 114,480 ( < 1 % )
+    Dedicated logic registers : 133 / 114,480 ( < 1 % )
+Total registers : 133
 Total pins : 104 / 529 ( 20 % )
 Total virtual pins : 0
 Total memory bits : 0 / 3,981,312 ( 0 % )

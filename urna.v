@@ -7,8 +7,8 @@ module urna(valid, estado, next_estado, clock, finish, confirma, reset, digit, d
     output[3:0] digito1, digito2, digito3, digito4;
     output candidatoArthur, candidatoLeandro, candidatoMateus, candidatoPablo, candidatoNulo;
 	 output[2:0] estado, next_estado;
-	
-	 
+
+
     reg[3:0] digito1, digito2, digito3, digito4;
     reg[3:0] next_digito1, next_digito2, next_digito3, next_digito4;
 
@@ -56,7 +56,7 @@ module urna(valid, estado, next_estado, clock, finish, confirma, reset, digit, d
             if(~reset) begin
 
                 candidatoArthur <= next_candidatoArthur;
-                candidatoLeandro <= next_candidatoPablo;
+                candidatoLeandro <= next_candidatoLeandro;
                 candidatoMateus <= next_candidatoMateus;
                 candidatoPablo <= next_candidatoPablo;
                 candidatoNulo <= next_candidatoNulo;
@@ -74,15 +74,15 @@ module urna(valid, estado, next_estado, clock, finish, confirma, reset, digit, d
     end
 
     always @(posedge valid) begin
-			
+
             case(estado)
 
-				
+
 					 resetando: begin
 						  next_estado<=aguardando1Dig;
 						  next_digito1 <= 0;
 					 end
-					 
+
                 aguardando1Dig: begin
                     next_candidatoArthur <= 0;
                     next_candidatoLeandro <= 0;

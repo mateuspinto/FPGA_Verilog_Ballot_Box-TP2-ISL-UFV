@@ -5,14 +5,34 @@
 module testbench ();
 
       wire clock;
+      wire candidatoArthur, candidatoMateus, candidatoPablo, candidatoNulo, candidatoLeandro,
+	  bcdOver0_0_1, bcdOver0_1_2, bcdOver0_2_3, bcdOver0_3_4, bcdOver0_4_5,
+	  bcdOver1_0_1, bcdOver1_1_2, bcdOver1_2_3, bcdOver1_3_4, bcdOver1_4_5,
+	  bcdOver2_0_1, bcdOver2_1_2, bcdOver2_2_3, bcdOver2_3_4, bcdOver2_4_5,
+	  bcdOver3_0_1, bcdOver3_1_2, bcdOver3_2_3, bcdOver3_3_4, bcdOver3_4_5,
+	  bcdOver4_0_1, bcdOver4_1_2, bcdOver4_2_3, bcdOver4_3_4, bcdOver4_4_5;
 
-      clock1unit clock0 (.clock(clock));
+    wire[3:0] digito1, digito2, digito3, digito4,
+			 bcd0_0, bcd0_1, bcd0_2, bcd0_3, bcd0_4, bcd0_5,
+			 bcd1_0, bcd1_1, bcd1_2, bcd1_3, bcd1_4, bcd1_5,
+			 bcd2_0, bcd2_1, bcd2_2, bcd2_3, bcd2_4, bcd2_5,
+			 bcd3_0, bcd3_1, bcd3_2, bcd3_3, bcd3_4, bcd3_5,
+			 bcd4_0, bcd4_1, bcd4_2, bcd4_3, bcd4_4, bcd4_5,
+			 bcd5_0, bcd5_1, bcd5_2, bcd5_3, bcd5_4, bcd5_5,
+			 bcdo0, bcdo1, bcdo2, bcdo3, bcdo4, bcdo5, bcdo6, bcdo7;
+
+    wire[2:0] estado, next_estado;
+    wire[1:0] votoValido;
+    reg[3:0] digitar;
+    reg valid, reset, confirma, resetUrna, finish;
+
+      clock1unit clock0 (.clk(clock));
 
       urna urna0 (.clock(clock), .digit(digitar), .valid(valid), .confirma(confirma), .finish(finish), .reset(resetUrna), .next_estado(next_estado), .candidatoArthur(candidatoArthur), .estado(estado),
       				.candidatoPablo(candidatoPablo), .candidatoMateus(candidatoMateus), .candidatoNulo(candidatoNulo), .candidatoLeandro(candidatoLeandro), .digito1(digito1), .digito2(digito2), .digito3(digito3),
       				.digito4(digito4), .votoValido(votoValido));
 
-      contadorBCD bcdModule0_0 (.clock(candidatoArthur), .valor(bcd0_0), .overflow(bcdOver0_0_1), .reset(reset));
+      contadorBCD bcdModule0_0 (.clock(candidatoArthur), .valor(bcd0_0), .overflow(bcdOver0_0_1), .reset(reset), .clockat(clock));
       contadorBCD bcdModule0_1 (.clock(bcdOver0_0_1), .valor(bcd0_1), .overflow(bcdOver0_1_2), .reset(reset));
       contadorBCD bcdModule0_2 (.clock(bcdOver0_1_2), .valor(bcd0_2), .overflow(bcdOver0_2_3), .reset(reset));
       contadorBCD bcdModule0_3 (.clock(bcdOver0_2_3), .valor(bcd0_3), .overflow(bcdOver0_3_4), .reset(reset));
@@ -50,6 +70,15 @@ module testbench ();
       initial begin
             $dumpfile("urnaEletronica.vcd");
             $dumpvars(0, testbench);
+
+            reset = 0; confirma = 0; valid = 0; digitar = 0; resetUrna = 0; finish = 0; #20;
+            resetUrna = 1; reset = 1; #20; valid = 1; #20; valid = 0; #20; resetUrna = 0; reset = 0; #20;
+
+            digitar = 3; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 4; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 8; #20; valid = 1; #20; valid = 0; #20;
+            digitar = 0; #20; valid = 1; #20; valid = 0; #20;
+            confirma = 1; #20; valid = 1; #20; valid = 0; #20;
 
             $finish;
 
