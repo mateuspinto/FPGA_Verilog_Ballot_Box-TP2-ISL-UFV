@@ -655,21 +655,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule0_1
@@ -683,21 +673,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule0_2
@@ -711,21 +691,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule0_3
@@ -739,21 +709,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule0_4
@@ -767,21 +727,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule0_5
@@ -795,21 +745,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule1_0
@@ -823,21 +763,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule1_1
@@ -851,21 +781,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule1_2
@@ -879,21 +799,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule1_3
@@ -907,21 +817,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule1_4
@@ -935,21 +835,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule1_5
@@ -963,21 +853,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule2_0
@@ -991,21 +871,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule2_1
@@ -1019,21 +889,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule2_2
@@ -1047,21 +907,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule2_3
@@ -1075,21 +925,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule2_4
@@ -1103,21 +943,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule2_5
@@ -1131,21 +961,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule3_0
@@ -1159,21 +979,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule3_1
@@ -1187,21 +997,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule3_2
@@ -1215,21 +1015,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule3_3
@@ -1243,21 +1033,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule3_4
@@ -1271,21 +1051,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule3_5
@@ -1299,21 +1069,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule4_0
@@ -1327,21 +1087,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule4_1
@@ -1355,21 +1105,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule4_2
@@ -1383,21 +1123,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule4_3
@@ -1411,21 +1141,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule4_4
@@ -1439,21 +1159,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|contadorBCD:bcdModule4_5
@@ -1467,21 +1177,11 @@ valor[1] <= valor[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[2] <= valor[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor[3] <= valor[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 overflow <= overflow~reg0.DB_MAX_OUTPUT_PORT_TYPE
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => valor.OUTPUTSELECT
-reset => overflow.OUTPUTSELECT
-clockat => next_overflow.CLK
-clockat => next_valor[0].CLK
-clockat => next_valor[1].CLK
-clockat => next_valor[2].CLK
-clockat => next_valor[3].CLK
+reset => overflow~reg0.ACLR
+reset => valor[0]~reg0.ACLR
+reset => valor[1]~reg0.ACLR
+reset => valor[2]~reg0.ACLR
+reset => valor[3]~reg0.ACLR
 
 
 |urnatp|bcd7convert:bcd7convert0

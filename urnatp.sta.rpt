@@ -1,5 +1,5 @@
 Timing Analyzer report for urnatp
-Sun Dec 02 00:36:24 2018
+Sun Dec 02 17:54:05 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -99,13 +99,13 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.4%      ;
-;     Processors 3-4         ;   0.4%      ;
+;     Processor 2            ;   1.3%      ;
+;     Processors 3-4         ;   0.6%      ;
 +----------------------------+-------------+
 
 
@@ -114,7 +114,7 @@ refer to the applicable agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; urnatp.SDC    ; OK     ; Sun Dec 02 00:36:22 2018 ;
+; urnatp.SDC    ; OK     ; Sun Dec 02 17:54:03 2018 ;
 +---------------+--------+--------------------------+
 
 
@@ -134,7 +134,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 208.51 MHz ; 208.51 MHz      ; CLOCK_50   ;      ;
+; 185.67 MHz ; 185.67 MHz      ; CLOCK_50   ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -150,7 +150,7 @@ HTML report is unavailable in plain text report export.
 +----------+--------+-----------------+
 ; Clock    ; Slack  ; End Point TNS   ;
 +----------+--------+-----------------+
-; CLOCK_50 ; 15.204 ; 0.000           ;
+; CLOCK_50 ; 14.614 ; 0.000           ;
 +----------+--------+-----------------+
 
 
@@ -159,7 +159,7 @@ HTML report is unavailable in plain text report export.
 +----------+-------+-----------------+
 ; Clock    ; Slack ; End Point TNS   ;
 +----------+-------+-----------------+
-; CLOCK_50 ; 0.440 ; 0.000           ;
+; CLOCK_50 ; 0.653 ; 0.000           ;
 +----------+-------+-----------------+
 
 
@@ -180,7 +180,7 @@ No paths to report.
 +-----------+--------+------------------------------+
 ; Clock     ; Slack  ; End Point TNS                ;
 +-----------+--------+------------------------------+
-; CLOCK_50  ; 9.645  ; 0.000                        ;
+; CLOCK_50  ; 9.684  ; 0.000                        ;
 ; CLOCK2_50 ; 16.000 ; 0.000                        ;
 ; CLOCK3_50 ; 16.000 ; 0.000                        ;
 +-----------+--------+------------------------------+
@@ -191,106 +191,106 @@ No paths to report.
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; 15.204 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 3.372      ;
-; 15.358 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 3.218      ;
-; 15.508 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 3.068      ;
-; 15.514 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 3.062      ;
-; 15.528 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 3.048      ;
-; 15.577 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 2.999      ;
-; 15.586 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 2.990      ;
-; 15.600 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 2.976      ;
-; 15.671 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 2.905      ;
-; 15.680 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 2.896      ;
-; 15.692 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 2.884      ;
-; 15.698 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 2.878      ;
-; 15.796 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 2.780      ;
-; 15.807 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 2.769      ;
-; 15.851 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 2.725      ;
-; 15.868 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.421     ; 2.709      ;
-; 15.872 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.420     ; 2.706      ;
-; 15.892 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.421     ; 2.685      ;
-; 15.904 ; divisorClock:divclock1|fraclock[21] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.421     ; 2.673      ;
-; 15.909 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.421     ; 2.668      ;
-; 15.928 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.987      ;
-; 15.935 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.980      ;
-; 16.047 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.420     ; 2.531      ;
-; 16.070 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.845      ;
-; 16.084 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.420     ; 2.494      ;
-; 16.092 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.823      ;
-; 16.094 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.821      ;
-; 16.107 ; divisorClock:divclock1|fraclock[19] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.421     ; 2.470      ;
-; 16.117 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.422     ; 2.459      ;
-; 16.147 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.768      ;
-; 16.165 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.750      ;
-; 16.171 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.421     ; 2.406      ;
-; 16.199 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.716      ;
-; 16.202 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.713      ;
-; 16.226 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.689      ;
-; 16.237 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.678      ;
-; 16.249 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.420     ; 2.329      ;
-; 16.250 ; divisorClock:divclock1|fraclock[31] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.420     ; 2.328      ;
-; 16.267 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.650      ;
-; 16.268 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.649      ;
-; 16.268 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.647      ;
-; 16.269 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.648      ;
-; 16.275 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.640      ;
-; 16.279 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.636      ;
-; 16.281 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.634      ;
-; 16.299 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.420     ; 2.279      ;
-; 16.299 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.616      ;
-; 16.314 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.601      ;
-; 16.324 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.591      ;
-; 16.333 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.582      ;
-; 16.333 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.582      ;
-; 16.356 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[19] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.559      ;
-; 16.358 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.557      ;
-; 16.369 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.546      ;
-; 16.369 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.546      ;
-; 16.377 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.538      ;
-; 16.390 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.420     ; 2.188      ;
-; 16.395 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.520      ;
-; 16.399 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.516      ;
-; 16.406 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.509      ;
-; 16.412 ; divisorClock:divclock1|fraclock[30] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.420     ; 2.166      ;
-; 16.412 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.503      ;
-; 16.413 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.502      ;
-; 16.413 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.502      ;
-; 16.416 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.499      ;
-; 16.418 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[19] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.497      ;
-; 16.421 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.496      ;
-; 16.422 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.495      ;
-; 16.423 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.494      ;
-; 16.429 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.486      ;
-; 16.431 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.484      ;
-; 16.432 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.483      ;
-; 16.434 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.481      ;
-; 16.446 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.469      ;
-; 16.448 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.467      ;
-; 16.454 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.463      ;
-; 16.458 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.457      ;
-; 16.465 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.450      ;
-; 16.465 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.450      ;
-; 16.467 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.448      ;
-; 16.486 ; divisorClock:divclock1|fraclock[16] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.420     ; 2.092      ;
-; 16.487 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.428      ;
-; 16.500 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.415      ;
-; 16.501 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.414      ;
-; 16.501 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.414      ;
-; 16.509 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.406      ;
-; 16.529 ; divisorClock:divclock1|fraclock[17] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.421     ; 2.048      ;
-; 16.535 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.380      ;
-; 16.536 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.379      ;
-; 16.542 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.373      ;
-; 16.543 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.374      ;
-; 16.544 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.371      ;
-; 16.545 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.370      ;
-; 16.548 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.369      ;
-; 16.549 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.368      ;
-; 16.554 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.361      ;
-; 16.563 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.352      ;
-; 16.563 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.352      ;
-; 16.565 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.350      ;
-; 16.566 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.349      ;
+; 14.614 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.944      ; 6.328      ;
+; 14.870 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.944      ; 6.072      ;
+; 14.889 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.944      ; 6.053      ;
+; 14.916 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.944      ; 6.026      ;
+; 14.927 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.944      ; 6.015      ;
+; 14.977 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.944      ; 5.965      ;
+; 15.105 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.944      ; 5.837      ;
+; 15.114 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.944      ; 5.828      ;
+; 15.136 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.945      ; 5.807      ;
+; 15.223 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.944      ; 5.719      ;
+; 15.344 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.945      ; 5.599      ;
+; 15.353 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.944      ; 5.589      ;
+; 15.354 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.945      ; 5.589      ;
+; 15.402 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.945      ; 5.541      ;
+; 15.460 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.945      ; 5.483      ;
+; 15.529 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.387      ;
+; 15.529 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.387      ;
+; 15.530 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.386      ;
+; 15.531 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.385      ;
+; 15.532 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.384      ;
+; 15.535 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.381      ;
+; 15.622 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.945      ; 5.321      ;
+; 15.696 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 4.219      ;
+; 15.785 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.131      ;
+; 15.785 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.131      ;
+; 15.786 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.130      ;
+; 15.787 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.129      ;
+; 15.788 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.128      ;
+; 15.791 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.125      ;
+; 15.804 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.112      ;
+; 15.804 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.112      ;
+; 15.805 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.111      ;
+; 15.806 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.110      ;
+; 15.807 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.109      ;
+; 15.810 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.106      ;
+; 15.823 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 4.092      ;
+; 15.831 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.085      ;
+; 15.831 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.085      ;
+; 15.832 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.084      ;
+; 15.833 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.083      ;
+; 15.834 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.082      ;
+; 15.837 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.079      ;
+; 15.842 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.074      ;
+; 15.842 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.074      ;
+; 15.843 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.073      ;
+; 15.844 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.072      ;
+; 15.845 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.071      ;
+; 15.848 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.068      ;
+; 15.884 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.032      ;
+; 15.884 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.032      ;
+; 15.885 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.031      ;
+; 15.885 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.031      ;
+; 15.886 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.030      ;
+; 15.889 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 4.027      ;
+; 15.893 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 4.021      ;
+; 15.905 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 4.010      ;
+; 15.927 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.988      ;
+; 15.978 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.936      ;
+; 15.980 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.946      ; 4.964      ;
+; 15.994 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.946      ; 4.950      ;
+; 16.000 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.914      ;
+; 16.020 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.896      ;
+; 16.020 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.896      ;
+; 16.020 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.894      ;
+; 16.020 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.894      ;
+; 16.021 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.893      ;
+; 16.021 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.895      ;
+; 16.022 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.892      ;
+; 16.022 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.892      ;
+; 16.022 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.894      ;
+; 16.023 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.893      ;
+; 16.025 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[19] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.889      ;
+; 16.026 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.890      ;
+; 16.026 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.888      ;
+; 16.026 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.888      ;
+; 16.028 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.886      ;
+; 16.029 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.887      ;
+; 16.029 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.887      ;
+; 16.030 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.886      ;
+; 16.031 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.885      ;
+; 16.032 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.884      ;
+; 16.035 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.881      ;
+; 16.043 ; divisorClock:divclock1|fraclock[31] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.946      ; 4.901      ;
+; 16.051 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.866      ;
+; 16.051 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.866      ;
+; 16.052 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.865      ;
+; 16.053 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.864      ;
+; 16.054 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.863      ;
+; 16.057 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.081     ; 3.860      ;
+; 16.070 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.845      ;
+; 16.101 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.946      ; 4.843      ;
+; 16.107 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.083     ; 3.808      ;
+; 16.111 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.803      ;
+; 16.124 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.790      ;
+; 16.127 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.789      ;
+; 16.127 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.789      ;
+; 16.127 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.084     ; 3.787      ;
+; 16.128 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.788      ;
+; 16.128 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.788      ;
+; 16.129 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.082     ; 3.787      ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -299,55 +299,55 @@ No paths to report.
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.440 ; divisorClock:divclock1|out_clock    ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.669      ;
+; 0.653 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.921      ;
 ; 0.653 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.921      ;
 ; 0.653 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.921      ;
-; 0.654 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.922      ;
 ; 0.654 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.922      ;
 ; 0.655 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.922      ;
 ; 0.655 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.923      ;
 ; 0.656 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.923      ;
 ; 0.656 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.924      ;
 ; 0.657 ; divisorClock:divclock1|fraclock[31] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.924      ;
+; 0.658 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.926      ;
 ; 0.658 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.926      ;
+; 0.659 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.926      ;
 ; 0.659 ; divisorClock:divclock1|fraclock[16] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.926      ;
 ; 0.659 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.927      ;
 ; 0.659 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.927      ;
-; 0.659 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.927      ;
-; 0.660 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.927      ;
 ; 0.661 ; divisorClock:divclock1|fraclock[30] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.928      ;
 ; 0.661 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.928      ;
 ; 0.661 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.928      ;
 ; 0.661 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.928      ;
+; 0.714 ; divisorClock:divclock1|out_clock    ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.158      ; 1.058      ;
 ; 0.971 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.239      ;
-; 0.971 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.239      ;
 ; 0.971 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.239      ;
+; 0.971 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.239      ;
 ; 0.973 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.241      ;
 ; 0.973 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.240      ;
 ; 0.974 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.241      ;
+; 0.985 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.253      ;
 ; 0.985 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.253      ;
-; 0.986 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.254      ;
 ; 0.986 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.254      ;
 ; 0.986 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.254      ;
 ; 0.987 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.255      ;
 ; 0.988 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.255      ;
 ; 0.988 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.255      ;
 ; 0.988 ; divisorClock:divclock1|fraclock[30] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.255      ;
+; 0.990 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.258      ;
 ; 0.990 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.258      ;
 ; 0.991 ; divisorClock:divclock1|fraclock[16] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.258      ;
-; 0.991 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.259      ;
 ; 0.991 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.259      ;
 ; 0.993 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.260      ;
 ; 0.993 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.260      ;
 ; 0.993 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.260      ;
-; 1.092 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.360      ;
 ; 1.092 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.360      ;
+; 1.092 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.360      ;
 ; 1.094 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.362      ;
 ; 1.094 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.361      ;
 ; 1.095 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.362      ;
 ; 1.097 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.365      ;
-; 1.097 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.365      ;
 ; 1.097 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.365      ;
+; 1.097 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.365      ;
 ; 1.100 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.367      ;
 ; 1.108 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.376      ;
 ; 1.111 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.379      ;
@@ -356,49 +356,49 @@ No paths to report.
 ; 1.114 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.381      ;
 ; 1.114 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.381      ;
 ; 1.114 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.381      ;
-; 1.116 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.383      ;
+; 1.116 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.384      ;
 ; 1.116 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.384      ;
-; 1.117 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.385      ;
 ; 1.119 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.386      ;
 ; 1.119 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.386      ;
-; 1.126 ; divisorClock:divclock1|fraclock[17] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.393      ;
-; 1.140 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.405      ;
-; 1.149 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.414      ;
-; 1.171 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.438      ;
-; 1.174 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.441      ;
-; 1.178 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.445      ;
-; 1.189 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.456      ;
-; 1.190 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.457      ;
+; 1.137 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.405      ;
+; 1.141 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.409      ;
+; 1.152 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.420      ;
+; 1.157 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.425      ;
+; 1.158 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.424      ;
+; 1.180 ; divisorClock:divclock1|fraclock[17] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.448      ;
+; 1.182 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.450      ;
+; 1.184 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.450      ;
+; 1.198 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.466      ;
 ; 1.218 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.486      ;
 ; 1.218 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.486      ;
 ; 1.221 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.488      ;
 ; 1.223 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.491      ;
-; 1.223 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.491      ;
 ; 1.223 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.491      ;
-; 1.226 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.492      ;
+; 1.223 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.491      ;
+; 1.225 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.491      ;
 ; 1.234 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.502      ;
-; 1.237 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.504      ;
-; 1.238 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.506      ;
+; 1.237 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.505      ;
 ; 1.240 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.507      ;
 ; 1.240 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.507      ;
-; 1.242 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.509      ;
+; 1.242 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.510      ;
 ; 1.242 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.510      ;
-; 1.243 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.511      ;
-; 1.244 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.511      ;
+; 1.243 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.510      ;
 ; 1.245 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.512      ;
 ; 1.245 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.511      ;
-; 1.266 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.531      ;
-; 1.268 ; divisorClock:divclock1|fraclock[21] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.535      ;
-; 1.273 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.540      ;
-; 1.275 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.540      ;
-; 1.276 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.541      ;
-; 1.280 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.547      ;
-; 1.297 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.564      ;
-; 1.300 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.567      ;
-; 1.302 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.567      ;
-; 1.304 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.571      ;
-; 1.315 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.582      ;
-; 1.316 ; divisorClock:divclock1|fraclock[17] ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.584      ;
+; 1.261 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.529      ;
+; 1.263 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.531      ;
+; 1.267 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.535      ;
+; 1.278 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.546      ;
+; 1.280 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.548      ;
+; 1.283 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.551      ;
+; 1.284 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.550      ;
+; 1.285 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.551      ;
+; 1.288 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.556      ;
+; 1.308 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.576      ;
+; 1.308 ; divisorClock:divclock1|fraclock[21] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.576      ;
+; 1.309 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.575      ;
+; 1.310 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.576      ;
+; 1.324 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.592      ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -408,13 +408,13 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary               ;
-+-----------+-----------------+------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
-+-----------+-----------------+------------+------+
-; 231.8 MHz ; 231.8 MHz       ; CLOCK_50   ;      ;
-+-----------+-----------------+------------+------+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 205.21 MHz ; 205.21 MHz      ; CLOCK_50   ;      ;
++------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -423,7 +423,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+--------+----------------+
 ; Clock    ; Slack  ; End Point TNS  ;
 +----------+--------+----------------+
-; CLOCK_50 ; 15.686 ; 0.000          ;
+; CLOCK_50 ; 15.127 ; 0.000          ;
 +----------+--------+----------------+
 
 
@@ -432,7 +432,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
-; CLOCK_50 ; 0.387 ; 0.000          ;
+; CLOCK_50 ; 0.597 ; 0.000          ;
 +----------+-------+----------------+
 
 
@@ -453,7 +453,7 @@ No paths to report.
 +-----------+--------+-----------------------------+
 ; Clock     ; Slack  ; End Point TNS               ;
 +-----------+--------+-----------------------------+
-; CLOCK_50  ; 9.636  ; 0.000                       ;
+; CLOCK_50  ; 9.691  ; 0.000                       ;
 ; CLOCK2_50 ; 16.000 ; 0.000                       ;
 ; CLOCK3_50 ; 16.000 ; 0.000                       ;
 +-----------+--------+-----------------------------+
@@ -464,106 +464,106 @@ No paths to report.
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; 15.686 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 3.064      ;
-; 15.837 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.913      ;
-; 15.944 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.806      ;
-; 15.957 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.793      ;
-; 15.959 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.791      ;
-; 16.025 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.725      ;
-; 16.067 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.682      ;
-; 16.076 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.673      ;
-; 16.076 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.673      ;
-; 16.094 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.656      ;
-; 16.113 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.637      ;
-; 16.165 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.584      ;
-; 16.193 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.557      ;
-; 16.199 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.551      ;
-; 16.275 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.475      ;
-; 16.310 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.439      ;
-; 16.316 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.610      ;
-; 16.319 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.430      ;
-; 16.330 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.596      ;
-; 16.341 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.408      ;
-; 16.342 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.407      ;
-; 16.353 ; divisorClock:divclock1|fraclock[21] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.396      ;
-; 16.448 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.302      ;
-; 16.467 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.459      ;
-; 16.471 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.455      ;
-; 16.481 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.269      ;
-; 16.506 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.419      ;
-; 16.512 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.237      ;
-; 16.530 ; divisorClock:divclock1|fraclock[19] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.219      ;
-; 16.539 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.388      ;
-; 16.588 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.338      ;
-; 16.589 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.250     ; 2.160      ;
-; 16.600 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.327      ;
-; 16.614 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.313      ;
-; 16.617 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.133      ;
-; 16.619 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.308      ;
-; 16.621 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.306      ;
-; 16.622 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.305      ;
-; 16.622 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.303      ;
-; 16.636 ; divisorClock:divclock1|fraclock[31] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.114      ;
-; 16.636 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.291      ;
-; 16.650 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.277      ;
-; 16.651 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.274      ;
-; 16.656 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.271      ;
-; 16.658 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.269      ;
-; 16.664 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 2.086      ;
-; 16.701 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[19] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.225      ;
-; 16.719 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.208      ;
-; 16.730 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.196      ;
-; 16.733 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.194      ;
-; 16.733 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.194      ;
-; 16.738 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.187      ;
-; 16.741 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.185      ;
-; 16.741 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.186      ;
-; 16.744 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.183      ;
-; 16.748 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.179      ;
-; 16.750 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[19] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.177      ;
-; 16.751 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.176      ;
-; 16.752 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 1.998      ;
-; 16.759 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.167      ;
-; 16.765 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.162      ;
-; 16.767 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.158      ;
-; 16.770 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.157      ;
-; 16.772 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.155      ;
-; 16.773 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.154      ;
-; 16.773 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.154      ;
-; 16.775 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.152      ;
-; 16.777 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.149      ;
-; 16.777 ; divisorClock:divclock1|fraclock[30] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 1.973      ;
-; 16.787 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.140      ;
-; 16.802 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.124      ;
-; 16.816 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.110      ;
-; 16.817 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.109      ;
-; 16.826 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.100      ;
-; 16.834 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.093      ;
-; 16.835 ; divisorClock:divclock1|fraclock[16] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -1.249     ; 1.915      ;
-; 16.846 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.080      ;
-; 16.848 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.079      ;
-; 16.849 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.078      ;
-; 16.849 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.077      ;
-; 16.850 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.077      ;
-; 16.858 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.068      ;
-; 16.860 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.067      ;
-; 16.860 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.067      ;
-; 16.866 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.061      ;
-; 16.866 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.060      ;
-; 16.867 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.060      ;
-; 16.871 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.056      ;
-; 16.875 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.051      ;
-; 16.876 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.051      ;
-; 16.877 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.050      ;
-; 16.878 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.049      ;
-; 16.878 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.048      ;
-; 16.883 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.042      ;
-; 16.885 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.042      ;
-; 16.890 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.037      ;
-; 16.890 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.037      ;
-; 16.891 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.036      ;
-; 16.892 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.035      ;
-; 16.892 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.072     ; 3.035      ;
+; 15.127 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.879      ; 5.751      ;
+; 15.343 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.879      ; 5.535      ;
+; 15.357 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.879      ; 5.521      ;
+; 15.386 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.879      ; 5.492      ;
+; 15.388 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.879      ; 5.490      ;
+; 15.412 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.879      ; 5.466      ;
+; 15.537 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.879      ; 5.341      ;
+; 15.542 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.879      ; 5.336      ;
+; 15.628 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.879      ; 5.250      ;
+; 15.633 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.880      ; 5.246      ;
+; 15.728 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.879      ; 5.150      ;
+; 15.773 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.880      ; 5.106      ;
+; 15.821 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.880      ; 5.058      ;
+; 15.826 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.880      ; 5.053      ;
+; 15.904 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.880      ; 4.975      ;
+; 15.931 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.994      ;
+; 15.931 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.994      ;
+; 15.932 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.993      ;
+; 15.933 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.992      ;
+; 15.933 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.992      ;
+; 15.936 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.989      ;
+; 16.020 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.880      ; 4.859      ;
+; 16.130 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.795      ;
+; 16.147 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.778      ;
+; 16.147 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.778      ;
+; 16.148 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.777      ;
+; 16.149 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.776      ;
+; 16.149 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.776      ;
+; 16.152 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.773      ;
+; 16.161 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.764      ;
+; 16.161 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.764      ;
+; 16.162 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.763      ;
+; 16.163 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.762      ;
+; 16.163 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.762      ;
+; 16.166 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.759      ;
+; 16.190 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.735      ;
+; 16.190 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.735      ;
+; 16.191 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.734      ;
+; 16.192 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.733      ;
+; 16.192 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.733      ;
+; 16.192 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.733      ;
+; 16.192 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.733      ;
+; 16.193 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.732      ;
+; 16.194 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.731      ;
+; 16.194 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.731      ;
+; 16.195 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.730      ;
+; 16.197 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.728      ;
+; 16.216 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.709      ;
+; 16.216 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.709      ;
+; 16.217 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.708      ;
+; 16.218 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.707      ;
+; 16.218 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.707      ;
+; 16.221 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.704      ;
+; 16.236 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.689      ;
+; 16.315 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.610      ;
+; 16.325 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.600      ;
+; 16.341 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.584      ;
+; 16.341 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.584      ;
+; 16.342 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.583      ;
+; 16.343 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.582      ;
+; 16.343 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.582      ;
+; 16.346 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.579      ;
+; 16.346 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.579      ;
+; 16.346 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.579      ;
+; 16.347 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.578      ;
+; 16.348 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.577      ;
+; 16.348 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.577      ;
+; 16.351 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.574      ;
+; 16.358 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.566      ;
+; 16.387 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.537      ;
+; 16.398 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.526      ;
+; 16.400 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.524      ;
+; 16.401 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.523      ;
+; 16.401 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.523      ;
+; 16.404 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[19] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.520      ;
+; 16.405 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.519      ;
+; 16.406 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.518      ;
+; 16.415 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.509      ;
+; 16.419 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.882      ; 4.462      ;
+; 16.431 ; divisorClock:divclock1|fraclock[31] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.881      ; 4.449      ;
+; 16.432 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.493      ;
+; 16.432 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.493      ;
+; 16.432 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.882      ; 4.449      ;
+; 16.433 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.492      ;
+; 16.434 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.491      ;
+; 16.434 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.491      ;
+; 16.437 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.488      ;
+; 16.437 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.489      ;
+; 16.437 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.489      ;
+; 16.438 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.488      ;
+; 16.439 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.487      ;
+; 16.439 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.487      ;
+; 16.442 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.073     ; 3.484      ;
+; 16.472 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.452      ;
+; 16.477 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.447      ;
+; 16.491 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.074     ; 3.434      ;
+; 16.506 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.418      ;
+; 16.521 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.403      ;
+; 16.522 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.882      ; 4.359      ;
+; 16.530 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.075     ; 3.394      ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -572,7 +572,6 @@ No paths to report.
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.387 ; divisorClock:divclock1|out_clock    ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.039      ; 0.597      ;
 ; 0.597 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.841      ;
 ; 0.597 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.841      ;
 ; 0.598 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.842      ;
@@ -580,26 +579,27 @@ No paths to report.
 ; 0.599 ; divisorClock:divclock1|fraclock[31] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.843      ;
 ; 0.599 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.843      ;
 ; 0.599 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.843      ;
-; 0.600 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.844      ;
+; 0.599 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.843      ;
 ; 0.601 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.845      ;
+; 0.602 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.846      ;
 ; 0.602 ; divisorClock:divclock1|fraclock[16] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.846      ;
+; 0.602 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.846      ;
 ; 0.602 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.846      ;
 ; 0.603 ; divisorClock:divclock1|fraclock[30] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.847      ;
-; 0.603 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.847      ;
 ; 0.603 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.847      ;
 ; 0.603 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.847      ;
-; 0.603 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.847      ;
 ; 0.604 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.848      ;
 ; 0.604 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.848      ;
 ; 0.604 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.848      ;
+; 0.643 ; divisorClock:divclock1|out_clock    ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.143      ; 0.957      ;
 ; 0.883 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.127      ;
 ; 0.883 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.127      ;
 ; 0.884 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.128      ;
 ; 0.885 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.129      ;
-; 0.887 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.131      ;
+; 0.886 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.130      ;
 ; 0.888 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.132      ;
+; 0.890 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.134      ;
 ; 0.890 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.134      ;
-; 0.891 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.135      ;
 ; 0.891 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.135      ;
 ; 0.891 ; divisorClock:divclock1|fraclock[30] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.135      ;
 ; 0.891 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.135      ;
@@ -607,8 +607,8 @@ No paths to report.
 ; 0.892 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.136      ;
 ; 0.898 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.142      ;
 ; 0.901 ; divisorClock:divclock1|fraclock[16] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.145      ;
+; 0.901 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.145      ;
 ; 0.901 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.145      ;
-; 0.902 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.146      ;
 ; 0.902 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.146      ;
 ; 0.903 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.147      ;
 ; 0.903 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.147      ;
@@ -616,62 +616,62 @@ No paths to report.
 ; 0.982 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.226      ;
 ; 0.983 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.227      ;
 ; 0.984 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.228      ;
-; 0.986 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.230      ;
+; 0.985 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.229      ;
 ; 0.987 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.231      ;
 ; 0.993 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.237      ;
 ; 0.993 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.237      ;
 ; 0.995 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.239      ;
+; 0.996 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.240      ;
 ; 0.997 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.241      ;
-; 0.997 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.241      ;
 ; 1.000 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.244      ;
 ; 1.001 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.245      ;
 ; 1.002 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.246      ;
 ; 1.002 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.246      ;
 ; 1.002 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.246      ;
 ; 1.008 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.252      ;
+; 1.011 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.255      ;
 ; 1.011 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.255      ;
-; 1.012 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.256      ;
 ; 1.013 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.257      ;
 ; 1.013 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.257      ;
-; 1.029 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.272      ;
-; 1.035 ; divisorClock:divclock1|fraclock[17] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.278      ;
-; 1.051 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.294      ;
-; 1.052 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.295      ;
-; 1.055 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.298      ;
-; 1.082 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.325      ;
-; 1.083 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.326      ;
+; 1.046 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.290      ;
+; 1.052 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.297      ;
+; 1.053 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.297      ;
+; 1.063 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.308      ;
+; 1.065 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.308      ;
+; 1.091 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.336      ;
+; 1.091 ; divisorClock:divclock1|fraclock[17] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.335      ;
 ; 1.092 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.336      ;
 ; 1.094 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.338      ;
-; 1.096 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.340      ;
-; 1.096 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.339      ;
-; 1.097 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.340      ;
+; 1.094 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.337      ;
+; 1.095 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.339      ;
 ; 1.103 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.347      ;
 ; 1.103 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.347      ;
-; 1.104 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.347      ;
-; 1.104 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.348      ;
+; 1.105 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.349      ;
+; 1.106 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.350      ;
+; 1.106 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.348      ;
 ; 1.107 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.351      ;
-; 1.107 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.351      ;
-; 1.111 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.355      ;
+; 1.110 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.354      ;
 ; 1.112 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.356      ;
 ; 1.112 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.356      ;
+; 1.121 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.365      ;
 ; 1.121 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.365      ;
-; 1.122 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.366      ;
-; 1.122 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.366      ;
-; 1.122 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.366      ;
+; 1.121 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.365      ;
 ; 1.123 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.367      ;
-; 1.137 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.380      ;
-; 1.139 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.382      ;
-; 1.161 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.404      ;
-; 1.161 ; divisorClock:divclock1|fraclock[21] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.404      ;
-; 1.162 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.405      ;
-; 1.165 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.408      ;
-; 1.165 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.408      ;
-; 1.173 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.416      ;
-; 1.191 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.435      ;
-; 1.192 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.435      ;
-; 1.192 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.435      ;
-; 1.193 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.436      ;
-; 1.202 ; divisorClock:divclock1|fraclock[17] ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.446      ;
+; 1.124 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.366      ;
+; 1.125 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.369      ;
+; 1.146 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.391      ;
+; 1.156 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.400      ;
+; 1.162 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.407      ;
+; 1.163 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.407      ;
+; 1.171 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.415      ;
+; 1.173 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.418      ;
+; 1.175 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.418      ;
+; 1.175 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.418      ;
+; 1.201 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.446      ;
+; 1.202 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.446      ;
+; 1.202 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.446      ;
+; 1.202 ; divisorClock:divclock1|fraclock[21] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.446      ;
+; 1.203 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.446      ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -686,7 +686,7 @@ No synchronizer chains to report.
 +----------+--------+----------------+
 ; Clock    ; Slack  ; End Point TNS  ;
 +----------+--------+----------------+
-; CLOCK_50 ; 17.572 ; 0.000          ;
+; CLOCK_50 ; 17.277 ; 0.000          ;
 +----------+--------+----------------+
 
 
@@ -695,7 +695,7 @@ No synchronizer chains to report.
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
-; CLOCK_50 ; 0.201 ; 0.000          ;
+; CLOCK_50 ; 0.298 ; 0.000          ;
 +----------+-------+----------------+
 
 
@@ -716,7 +716,7 @@ No paths to report.
 +-----------+--------+-----------------------------+
 ; Clock     ; Slack  ; End Point TNS               ;
 +-----------+--------+-----------------------------+
-; CLOCK_50  ; 9.267  ; 0.000                       ;
+; CLOCK_50  ; 9.266  ; 0.000                       ;
 ; CLOCK2_50 ; 16.000 ; 0.000                       ;
 ; CLOCK3_50 ; 16.000 ; 0.000                       ;
 +-----------+--------+-----------------------------+
@@ -727,106 +727,106 @@ No paths to report.
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; 17.572 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.595      ;
-; 17.636 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.531      ;
-; 17.701 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.821     ; 1.465      ;
-; 17.703 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.821     ; 1.463      ;
-; 17.715 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.452      ;
-; 17.721 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.446      ;
-; 17.732 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.435      ;
-; 17.738 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.429      ;
-; 17.765 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.821     ; 1.401      ;
-; 17.784 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.821     ; 1.382      ;
-; 17.786 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.381      ;
-; 17.805 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.362      ;
-; 17.835 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.821     ; 1.331      ;
-; 17.849 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.318      ;
-; 17.850 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.317      ;
-; 17.855 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.312      ;
-; 17.859 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.308      ;
-; 17.863 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.304      ;
-; 17.864 ; divisorClock:divclock1|fraclock[21] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.303      ;
-; 17.898 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.269      ;
-; 17.964 ; divisorClock:divclock1|fraclock[19] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.203      ;
-; 17.968 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.821     ; 1.198      ;
-; 17.973 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.194      ;
-; 17.979 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.188      ;
-; 17.998 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.169      ;
-; 18.012 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.932      ;
-; 18.020 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.924      ;
-; 18.044 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.900      ;
-; 18.061 ; divisorClock:divclock1|fraclock[31] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.106      ;
-; 18.078 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.089      ;
-; 18.082 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.862      ;
-; 18.085 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.860      ;
-; 18.086 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.081      ;
-; 18.088 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.857      ;
-; 18.093 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.852      ;
-; 18.094 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.850      ;
-; 18.112 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.832      ;
-; 18.115 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.829      ;
-; 18.125 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.042      ;
-; 18.131 ; divisorClock:divclock1|fraclock[30] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.036      ;
-; 18.150 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.794      ;
-; 18.155 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.790      ;
-; 18.156 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.789      ;
-; 18.156 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.789      ;
-; 18.159 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.786      ;
-; 18.159 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.786      ;
-; 18.164 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.781      ;
-; 18.166 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.779      ;
-; 18.167 ; divisorClock:divclock1|fraclock[17] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 1.000      ;
-; 18.167 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.778      ;
-; 18.174 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.771      ;
-; 18.183 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.761      ;
-; 18.190 ; divisorClock:divclock1|fraclock[16] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.820     ; 0.977      ;
-; 18.199 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.745      ;
-; 18.202 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.742      ;
-; 18.203 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.742      ;
-; 18.207 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.737      ;
-; 18.212 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.733      ;
-; 18.214 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.731      ;
-; 18.215 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.730      ;
-; 18.218 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.726      ;
-; 18.223 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.722      ;
-; 18.224 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.721      ;
-; 18.226 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.719      ;
-; 18.227 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.718      ;
-; 18.227 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.718      ;
-; 18.227 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.718      ;
-; 18.230 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.715      ;
-; 18.232 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.713      ;
-; 18.234 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.711      ;
-; 18.236 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[19] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.708      ;
-; 18.236 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.709      ;
-; 18.238 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.707      ;
-; 18.242 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.703      ;
-; 18.248 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.697      ;
-; 18.251 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.693      ;
-; 18.269 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.675      ;
-; 18.270 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.674      ;
-; 18.271 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.674      ;
-; 18.271 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.674      ;
-; 18.273 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.671      ;
-; 18.274 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.671      ;
-; 18.276 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.669      ;
-; 18.278 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.667      ;
-; 18.279 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.666      ;
-; 18.280 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.664      ;
-; 18.281 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.663      ;
-; 18.289 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.656      ;
-; 18.291 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.654      ;
-; 18.292 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.653      ;
-; 18.294 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.651      ;
-; 18.294 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.651      ;
-; 18.295 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.650      ;
-; 18.295 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.650      ;
-; 18.295 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[19] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.650      ;
-; 18.298 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.647      ;
-; 18.298 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.647      ;
-; 18.302 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.643      ;
-; 18.303 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.043     ; 1.641      ;
-; 18.304 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.641      ;
+; 17.277 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 3.242      ;
+; 17.398 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 3.121      ;
+; 17.414 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 3.105      ;
+; 17.418 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 3.101      ;
+; 17.420 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 3.099      ;
+; 17.449 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 3.070      ;
+; 17.499 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 3.020      ;
+; 17.500 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 3.019      ;
+; 17.501 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 3.018      ;
+; 17.552 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 2.967      ;
+; 17.592 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 2.927      ;
+; 17.594 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 2.925      ;
+; 17.620 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 2.899      ;
+; 17.626 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 2.893      ;
+; 17.657 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 2.862      ;
+; 17.730 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.532      ; 2.789      ;
+; 17.785 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.160      ;
+; 17.786 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.159      ;
+; 17.787 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.158      ;
+; 17.787 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.158      ;
+; 17.788 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.157      ;
+; 17.792 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.153      ;
+; 17.879 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 2.064      ;
+; 17.906 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.039      ;
+; 17.907 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.038      ;
+; 17.908 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.037      ;
+; 17.908 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.037      ;
+; 17.909 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.036      ;
+; 17.913 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.032      ;
+; 17.922 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.023      ;
+; 17.923 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.022      ;
+; 17.924 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.021      ;
+; 17.924 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.021      ;
+; 17.925 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.020      ;
+; 17.926 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.019      ;
+; 17.927 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.018      ;
+; 17.928 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.017      ;
+; 17.928 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.017      ;
+; 17.928 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.017      ;
+; 17.929 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.016      ;
+; 17.929 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.016      ;
+; 17.929 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.016      ;
+; 17.930 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.015      ;
+; 17.930 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.015      ;
+; 17.931 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.014      ;
+; 17.933 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.012      ;
+; 17.935 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 2.010      ;
+; 17.939 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.534      ; 2.582      ;
+; 17.941 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 2.002      ;
+; 17.945 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.534      ; 2.576      ;
+; 17.948 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.995      ;
+; 17.957 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.988      ;
+; 17.958 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.987      ;
+; 17.959 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.986      ;
+; 17.959 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.986      ;
+; 17.960 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.983      ;
+; 17.960 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.985      ;
+; 17.964 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.981      ;
+; 17.998 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.945      ;
+; 18.002 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.941      ;
+; 18.007 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.938      ;
+; 18.007 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.534      ; 2.514      ;
+; 18.008 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.937      ;
+; 18.008 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.937      ;
+; 18.009 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.936      ;
+; 18.009 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.936      ;
+; 18.009 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.936      ;
+; 18.009 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.936      ;
+; 18.010 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.935      ;
+; 18.010 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.935      ;
+; 18.010 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.935      ;
+; 18.010 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.935      ;
+; 18.010 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.933      ;
+; 18.011 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.934      ;
+; 18.011 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.934      ;
+; 18.011 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.934      ;
+; 18.012 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.933      ;
+; 18.012 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.931      ;
+; 18.014 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.931      ;
+; 18.015 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.930      ;
+; 18.016 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.929      ;
+; 18.022 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.921      ;
+; 18.026 ; divisorClock:divclock1|fraclock[31] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.534      ; 2.495      ;
+; 18.045 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.898      ;
+; 18.048 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.895      ;
+; 18.059 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.884      ;
+; 18.060 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.883      ;
+; 18.060 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[20] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.883      ;
+; 18.060 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[7]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.885      ;
+; 18.061 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.884      ;
+; 18.061 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.882      ;
+; 18.062 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.883      ;
+; 18.062 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[15] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.883      ;
+; 18.063 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[13] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.882      ;
+; 18.064 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[21] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.879      ;
+; 18.065 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[19] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.878      ;
+; 18.066 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[23] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.877      ;
+; 18.067 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 20.000       ; 0.534      ; 2.454      ;
+; 18.067 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[0]  ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.042     ; 1.878      ;
+; 18.067 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[22] ; CLOCK_50     ; CLOCK_50    ; 20.000       ; -0.044     ; 1.876      ;
 +--------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -835,59 +835,58 @@ No paths to report.
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.201 ; divisorClock:divclock1|out_clock    ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.022      ; 0.307      ;
 ; 0.298 ; divisorClock:divclock1|fraclock[31] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.424      ;
+; 0.298 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.424      ;
 ; 0.298 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.424      ;
 ; 0.298 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.424      ;
+; 0.298 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.424      ;
 ; 0.299 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
 ; 0.299 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
-; 0.299 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
+; 0.299 ; divisorClock:divclock1|fraclock[16] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
 ; 0.299 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
-; 0.299 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
-; 0.300 ; divisorClock:divclock1|fraclock[16] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
+; 0.300 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
 ; 0.300 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
 ; 0.300 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
+; 0.300 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
 ; 0.300 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
 ; 0.301 ; divisorClock:divclock1|fraclock[30] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.427      ;
 ; 0.301 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.427      ;
-; 0.301 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.427      ;
 ; 0.301 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.427      ;
-; 0.301 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.427      ;
 ; 0.302 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.428      ;
 ; 0.302 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.428      ;
+; 0.313 ; divisorClock:divclock1|out_clock    ; divisorClock:divclock1|out_clock    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.087      ; 0.484      ;
 ; 0.447 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.573      ;
 ; 0.447 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.573      ;
-; 0.448 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.574      ;
+; 0.447 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.573      ;
 ; 0.448 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.574      ;
 ; 0.448 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.574      ;
 ; 0.449 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.575      ;
+; 0.458 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.584      ;
 ; 0.458 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.584      ;
 ; 0.458 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.584      ;
 ; 0.459 ; divisorClock:divclock1|fraclock[30] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.585      ;
-; 0.459 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.585      ;
 ; 0.459 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.585      ;
 ; 0.460 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.586      ;
 ; 0.460 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.586      ;
+; 0.460 ; divisorClock:divclock1|fraclock[16] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.586      ;
 ; 0.460 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.586      ;
-; 0.461 ; divisorClock:divclock1|fraclock[16] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.587      ;
+; 0.461 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.587      ;
 ; 0.461 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.587      ;
 ; 0.461 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.587      ;
 ; 0.462 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.588      ;
-; 0.462 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.588      ;
 ; 0.463 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.589      ;
 ; 0.463 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.589      ;
-; 0.507 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.633      ;
 ; 0.510 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.636      ;
-; 0.511 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.637      ;
+; 0.510 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.636      ;
 ; 0.511 ; divisorClock:divclock1|fraclock[29] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.637      ;
 ; 0.511 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.637      ;
-; 0.511 ; divisorClock:divclock1|fraclock[17] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.637      ;
 ; 0.512 ; divisorClock:divclock1|fraclock[9]  ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.638      ;
 ; 0.513 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.639      ;
 ; 0.513 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.639      ;
-; 0.514 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.640      ;
+; 0.513 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.639      ;
 ; 0.514 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.640      ;
-; 0.517 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.643      ;
+; 0.517 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.643      ;
+; 0.519 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.645      ;
 ; 0.523 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.649      ;
 ; 0.524 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.650      ;
 ; 0.524 ; divisorClock:divclock1|fraclock[8]  ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.650      ;
@@ -895,46 +894,47 @@ No paths to report.
 ; 0.526 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.652      ;
 ; 0.526 ; divisorClock:divclock1|fraclock[28] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.652      ;
 ; 0.526 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.652      ;
-; 0.526 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.652      ;
+; 0.527 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.653      ;
 ; 0.527 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.653      ;
-; 0.528 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.654      ;
 ; 0.528 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.654      ;
-; 0.528 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.654      ;
 ; 0.529 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.655      ;
-; 0.530 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.656      ;
-; 0.540 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.666      ;
-; 0.542 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.668      ;
-; 0.543 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.669      ;
-; 0.570 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.696      ;
-; 0.573 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.699      ;
+; 0.530 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.656      ;
+; 0.531 ; divisorClock:divclock1|fraclock[17] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.657      ;
+; 0.533 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.659      ;
+; 0.533 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.659      ;
+; 0.534 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.658      ;
+; 0.536 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.660      ;
+; 0.546 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.672      ;
 ; 0.576 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.702      ;
-; 0.577 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.703      ;
+; 0.576 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.702      ;
 ; 0.577 ; divisorClock:divclock1|fraclock[27] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.703      ;
 ; 0.579 ; divisorClock:divclock1|fraclock[5]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.705      ;
 ; 0.579 ; divisorClock:divclock1|fraclock[3]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.705      ;
-; 0.580 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.706      ;
-; 0.580 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.706      ;
-; 0.583 ; divisorClock:divclock1|fraclock[17] ; divisorClock:divclock1|fraclock[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.709      ;
-; 0.583 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.709      ;
-; 0.583 ; divisorClock:divclock1|fraclock[21] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.709      ;
-; 0.585 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.712      ;
-; 0.588 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.714      ;
+; 0.579 ; divisorClock:divclock1|fraclock[1]  ; divisorClock:divclock1|fraclock[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.705      ;
+; 0.581 ; divisorClock:divclock1|fraclock[11] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.705      ;
+; 0.582 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.708      ;
+; 0.583 ; divisorClock:divclock1|fraclock[23] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.709      ;
+; 0.585 ; divisorClock:divclock1|fraclock[25] ; divisorClock:divclock1|fraclock[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.711      ;
 ; 0.589 ; divisorClock:divclock1|fraclock[6]  ; divisorClock:divclock1|fraclock[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.715      ;
-; 0.591 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.717      ;
+; 0.590 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.716      ;
 ; 0.591 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.717      ;
-; 0.591 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.717      ;
 ; 0.592 ; divisorClock:divclock1|fraclock[26] ; divisorClock:divclock1|fraclock[31] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.718      ;
-; 0.592 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.718      ;
+; 0.593 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.719      ;
+; 0.593 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.719      ;
 ; 0.593 ; divisorClock:divclock1|fraclock[2]  ; divisorClock:divclock1|fraclock[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.719      ;
-; 0.593 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.719      ;
-; 0.594 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.720      ;
 ; 0.594 ; divisorClock:divclock1|fraclock[24] ; divisorClock:divclock1|fraclock[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.720      ;
-; 0.594 ; divisorClock:divclock1|fraclock[4]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.720      ;
-; 0.594 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.720      ;
-; 0.594 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.720      ;
-; 0.594 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.720      ;
-; 0.594 ; divisorClock:divclock1|fraclock[18] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.720      ;
-; 0.595 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|fraclock[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.722      ;
+; 0.595 ; divisorClock:divclock1|fraclock[20] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.721      ;
+; 0.596 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.722      ;
+; 0.596 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.722      ;
+; 0.596 ; divisorClock:divclock1|fraclock[10] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.720      ;
+; 0.599 ; divisorClock:divclock1|fraclock[0]  ; divisorClock:divclock1|fraclock[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.725      ;
+; 0.599 ; divisorClock:divclock1|fraclock[7]  ; divisorClock:divclock1|fraclock[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.725      ;
+; 0.599 ; divisorClock:divclock1|fraclock[21] ; divisorClock:divclock1|fraclock[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.725      ;
+; 0.600 ; divisorClock:divclock1|fraclock[14] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.724      ;
+; 0.600 ; divisorClock:divclock1|fraclock[12] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.724      ;
+; 0.601 ; divisorClock:divclock1|fraclock[13] ; divisorClock:divclock1|fraclock[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.725      ;
+; 0.602 ; divisorClock:divclock1|fraclock[15] ; divisorClock:divclock1|fraclock[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.726      ;
+; 0.612 ; divisorClock:divclock1|fraclock[22] ; divisorClock:divclock1|fraclock[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.738      ;
 +-------+-------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -949,10 +949,10 @@ No synchronizer chains to report.
 +------------------+--------+-------+----------+---------+---------------------+
 ; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack ; 15.204 ; 0.201 ; N/A      ; N/A     ; 9.267               ;
+; Worst-case Slack ; 14.614 ; 0.298 ; N/A      ; N/A     ; 9.266               ;
 ;  CLOCK2_50       ; N/A    ; N/A   ; N/A      ; N/A     ; 16.000              ;
 ;  CLOCK3_50       ; N/A    ; N/A   ; N/A      ; N/A     ; 16.000              ;
-;  CLOCK_50        ; 15.204 ; 0.201 ; N/A      ; N/A     ; 9.267               ;
+;  CLOCK_50        ; 14.614 ; 0.298 ; N/A      ; N/A     ; 9.266               ;
 ; Design-wide TNS  ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  CLOCK2_50       ; N/A    ; N/A   ; N/A      ; N/A     ; 0.000               ;
 ;  CLOCK3_50       ; N/A    ; N/A   ; N/A      ; N/A     ; 0.000               ;
@@ -1072,9 +1072,9 @@ No synchronizer chains to report.
 ; SW[3]                   ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[10]                  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; CLOCK_50                ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[13]                  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[11]                  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[12]                  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[11]                  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[13]                  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[17]                  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[16]                  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[15]                  ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
@@ -1402,9 +1402,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
-; Unconstrained Clocks            ; 2     ; 2    ;
+; Unconstrained Clocks            ; 7     ; 7    ;
 ; Unconstrained Input Ports       ; 11    ; 11   ;
-; Unconstrained Input Port Paths  ; 134   ; 134  ;
+; Unconstrained Input Port Paths  ; 180   ; 180  ;
 ; Unconstrained Output Ports      ; 57    ; 57   ;
 ; Unconstrained Output Port Paths ; 57    ; 57   ;
 +---------------------------------+-------+------+
@@ -1420,6 +1420,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; CLOCK_50                         ; CLOCK_50  ; Base ; Constrained   ;
 ; SW[4]                            ;           ; Base ; Unconstrained ;
 ; divisorClock:divclock1|out_clock ;           ; Base ; Unconstrained ;
+; urna:urna0|candidatoArthur       ;           ; Base ; Unconstrained ;
+; urna:urna0|candidatoLeandro      ;           ; Base ; Unconstrained ;
+; urna:urna0|candidatoMateus       ;           ; Base ; Unconstrained ;
+; urna:urna0|candidatoNulo         ;           ; Base ; Unconstrained ;
+; urna:urna0|candidatoPablo        ;           ; Base ; Unconstrained ;
 +----------------------------------+-----------+------+---------------+
 
 
@@ -1597,7 +1602,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Dec 02 00:36:21 2018
+    Info: Processing started: Sun Dec 02 17:54:02 2018
 Info: Command: quartus_sta urnatp -c urnatp
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1610,23 +1615,33 @@ Warning (332060): Node: SW[4] was determined to be a clock but was found without
     Info (13166): Register urna:urna0|next_estado[1] is being clocked by SW[4]
 Warning (332060): Node: divisorClock:divclock1|out_clock was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register urna:urna0|estado[2] is being clocked by divisorClock:divclock1|out_clock
+Warning (332060): Node: urna:urna0|candidatoMateus was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule2_0|valor[3] is being clocked by urna:urna0|candidatoMateus
+Warning (332060): Node: urna:urna0|candidatoPablo was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule3_0|valor[3] is being clocked by urna:urna0|candidatoPablo
+Warning (332060): Node: urna:urna0|candidatoArthur was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule0_0|valor[3] is being clocked by urna:urna0|candidatoArthur
+Warning (332060): Node: urna:urna0|candidatoLeandro was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule1_0|valor[3] is being clocked by urna:urna0|candidatoLeandro
+Warning (332060): Node: urna:urna0|candidatoNulo was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule4_0|valor[3] is being clocked by urna:urna0|candidatoNulo
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
-Info (332146): Worst-case setup slack is 15.204
+Info (332146): Worst-case setup slack is 14.614
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    15.204               0.000 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.440
+    Info (332119):    14.614               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.653
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.440               0.000 CLOCK_50 
+    Info (332119):     0.653               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 9.645
+Info (332146): Worst-case minimum pulse width slack is 9.684
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.645               0.000 CLOCK_50 
+    Info (332119):     9.684               0.000 CLOCK_50 
     Info (332119):    16.000               0.000 CLOCK2_50 
     Info (332119):    16.000               0.000 CLOCK3_50 
 Info: Analyzing Slow 1200mV 0C Model
@@ -1636,21 +1651,31 @@ Warning (332060): Node: SW[4] was determined to be a clock but was found without
     Info (13166): Register urna:urna0|next_estado[1] is being clocked by SW[4]
 Warning (332060): Node: divisorClock:divclock1|out_clock was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register urna:urna0|estado[2] is being clocked by divisorClock:divclock1|out_clock
+Warning (332060): Node: urna:urna0|candidatoMateus was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule2_0|valor[3] is being clocked by urna:urna0|candidatoMateus
+Warning (332060): Node: urna:urna0|candidatoPablo was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule3_0|valor[3] is being clocked by urna:urna0|candidatoPablo
+Warning (332060): Node: urna:urna0|candidatoArthur was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule0_0|valor[3] is being clocked by urna:urna0|candidatoArthur
+Warning (332060): Node: urna:urna0|candidatoLeandro was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule1_0|valor[3] is being clocked by urna:urna0|candidatoLeandro
+Warning (332060): Node: urna:urna0|candidatoNulo was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule4_0|valor[3] is being clocked by urna:urna0|candidatoNulo
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 15.686
+Info (332146): Worst-case setup slack is 15.127
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    15.686               0.000 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.387
+    Info (332119):    15.127               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.597
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.387               0.000 CLOCK_50 
+    Info (332119):     0.597               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 9.636
+Info (332146): Worst-case minimum pulse width slack is 9.691
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.636               0.000 CLOCK_50 
+    Info (332119):     9.691               0.000 CLOCK_50 
     Info (332119):    16.000               0.000 CLOCK2_50 
     Info (332119):    16.000               0.000 CLOCK3_50 
 Info: Analyzing Fast 1200mV 0C Model
@@ -1658,28 +1683,38 @@ Warning (332060): Node: SW[4] was determined to be a clock but was found without
     Info (13166): Register urna:urna0|next_estado[1] is being clocked by SW[4]
 Warning (332060): Node: divisorClock:divclock1|out_clock was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register urna:urna0|estado[2] is being clocked by divisorClock:divclock1|out_clock
+Warning (332060): Node: urna:urna0|candidatoMateus was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule2_0|valor[3] is being clocked by urna:urna0|candidatoMateus
+Warning (332060): Node: urna:urna0|candidatoPablo was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule3_0|valor[3] is being clocked by urna:urna0|candidatoPablo
+Warning (332060): Node: urna:urna0|candidatoArthur was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule0_0|valor[3] is being clocked by urna:urna0|candidatoArthur
+Warning (332060): Node: urna:urna0|candidatoLeandro was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule1_0|valor[3] is being clocked by urna:urna0|candidatoLeandro
+Warning (332060): Node: urna:urna0|candidatoNulo was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register contadorBCD:bcdModule4_0|valor[3] is being clocked by urna:urna0|candidatoNulo
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 17.572
+Info (332146): Worst-case setup slack is 17.277
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    17.572               0.000 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.201
+    Info (332119):    17.277               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.298
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.201               0.000 CLOCK_50 
+    Info (332119):     0.298               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 9.267
+Info (332146): Worst-case minimum pulse width slack is 9.266
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     9.267               0.000 CLOCK_50 
+    Info (332119):     9.266               0.000 CLOCK_50 
     Info (332119):    16.000               0.000 CLOCK2_50 
     Info (332119):    16.000               0.000 CLOCK3_50 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 703 megabytes
-    Info: Processing ended: Sun Dec 02 00:36:24 2018
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 706 megabytes
+    Info: Processing ended: Sun Dec 02 17:54:05 2018
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 

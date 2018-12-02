@@ -32,7 +32,7 @@ module testbench ();
       				.candidatoPablo(candidatoPablo), .candidatoMateus(candidatoMateus), .candidatoNulo(candidatoNulo), .candidatoLeandro(candidatoLeandro), .digito1(digito1), .digito2(digito2), .digito3(digito3),
       				.digito4(digito4), .votoValido(votoValido));
 
-      contadorBCD bcdModule0_0 (.clock(candidatoArthur), .valor(bcd0_0), .overflow(bcdOver0_0_1), .reset(reset), .clockat(clock));
+      contadorBCD bcdModule0_0 (.clock(candidatoArthur), .valor(bcd0_0), .overflow(bcdOver0_0_1), .reset(reset));
       contadorBCD bcdModule0_1 (.clock(bcdOver0_0_1), .valor(bcd0_1), .overflow(bcdOver0_1_2), .reset(reset));
       contadorBCD bcdModule0_2 (.clock(bcdOver0_1_2), .valor(bcd0_2), .overflow(bcdOver0_2_3), .reset(reset));
       contadorBCD bcdModule0_3 (.clock(bcdOver0_2_3), .valor(bcd0_3), .overflow(bcdOver0_3_4), .reset(reset));
