@@ -1,5 +1,5 @@
 EDA Netlist Writer report for urnatp
-Sun Dec 02 21:59:05 2018
+Sun Dec 02 22:04:15 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -34,7 +34,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                                       ;
 +---------------------------+------------------------------------------------------+
-; EDA Netlist Writer Status ; No Output Files Generated - Sun Dec 02 21:59:05 2018 ;
+; EDA Netlist Writer Status ; No Output Files Generated - Sun Dec 02 22:04:15 2018 ;
 ; Revision Name             ; urnatp                                               ;
 ; Top-level Entity Name     ; urnatp                                               ;
 ; Family                    ; Cyclone IV E                                         ;
@@ -47,14 +47,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Dec 02 21:59:05 2018
+    Info: Processing started: Sun Dec 02 22:04:14 2018
 Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off urnatp -c urnatp
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (199027): Can't generate output files. Specify command-line options to generate output files, or update EDA tool settings using GUI or Tcl script.
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 503 megabytes
-    Info: Processing ended: Sun Dec 02 21:59:05 2018
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 506 megabytes
+    Info: Processing ended: Sun Dec 02 22:04:15 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

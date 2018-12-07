@@ -1,0 +1,9 @@
+Trabalho prático 2 de Introdução aos Sistemas Lógicos: Urna eletrônica
+
+Feito por:
+Arthur de Bellis 3503
+Leandro Lázaro 3513
+Mateus Pinto 3489
+Pablo Ferreira 3480
+
+Essa pasta contem o projeto Quartus, o arquivo Jflap e o testbench.v
